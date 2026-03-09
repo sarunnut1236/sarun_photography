@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Trirong:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Trirong", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+html[data-theme="light"] {
+  --bg: #ffffff;
+  --text-primary: #171717;
+  --text-secondary: #4b4b4b;
+  --border-subtle: #e0e0e0;
+  --accent: #888888;
+}
+
+html[data-theme="dark"] {
+  --bg: #121212;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-subtle: #444444;
+  --accent: #888888;
+}
+
+html,
+body {
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: "Trirong", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out both;
+}
