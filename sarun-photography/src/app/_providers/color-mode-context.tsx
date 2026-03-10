@@ -1,13 +1,6 @@
- "use client";
+"use client";
 
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
 type ColorMode = "light" | "dark";
 
@@ -20,11 +13,7 @@ const ColorModeContext = createContext<ColorModeContextValue | null>(null);
 
 const COLOR_MODE_STORAGE_KEY = "sarun-color-mode";
 
-export function ColorModeProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export function ColorModeProvider({ children }: { children: React.ReactNode }) {
   const [mode, setMode] = useState<ColorMode>("light");
 
   useEffect(() => {
@@ -59,14 +48,10 @@ export function ColorModeProvider({
       mode,
       toggleMode,
     }),
-    [mode, toggleMode]
+    [mode, toggleMode],
   );
 
-  return (
-    <ColorModeContext.Provider value={value}>
-      {children}
-    </ColorModeContext.Provider>
-  );
+  return <ColorModeContext.Provider value={value}>{children}</ColorModeContext.Provider>;
 }
 
 export function useColorMode(): ColorModeContextValue {
@@ -76,4 +61,3 @@ export function useColorMode(): ColorModeContextValue {
   }
   return ctx;
 }
-

@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sarun Photography
 
-## Getting Started
+Minimal, bilingual (EN/TH) photography portfolio for a Bangkok-based photographer, featuring:
 
-First, run the development server:
+- **Portrait galleries** as carousels (autoplay on load; stops permanently after the user interacts with that carousel)
+- **Landscape gallery** as a clean 3-column grid with hover captions
+- **Light/Dark mode** and a minimalist UI so photos stay the focus
+
+## Tech stack
+
+- **Next.js** (App Router)
+- **React**
+- **Tailwind CSS**
+- **MUI**
+- **Cloudinary** via `next-cloudinary` (`CldImage`)
+
+## Requirements
+
+- **Node.js**: v25.8
+- **bun.js:** v1.3.10
+
+## Setup
+
+From the repo root:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+cd sarun-photography
+bun install
+```
+
+## Development
+
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **dev**: `bun dev`
+- **build**: `bun build`
+- **start**: `bun start`
+- **lint**: `bun lint`
 
-## Learn More
+## Environment variables
 
-To learn more about Next.js, take a look at the following resources:
+Images are rendered only when Cloudinary is enabled.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create `sarun-photography/.env.local`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
+```
 
-## Deploy on Vercel
+If `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` is missing, the app intentionally avoids rendering Cloudinary images (see `src/app/_hooks/use-cloudinary.ts`).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Content management (texts + photos)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All content is authored in TypeScript files under `sarun-photography/src/app/_content/`.
+
+Use the project guide at `.cursor/rules/content-management.md` as the source of truth, especially for:
+
+- Updating bilingual copy
+- Adding/replacing portrait albums
+- Adding/replacing landscape photos
+
+Common edit locations:
+
+- **Copy (EN/TH UI text)**: `src/app/_content/copy.ts`
+- **Portrait albums**: `src/app/_content/portrait-albums.ts`
+- **Landscape photos**: `src/app/_content/landscape-photos.ts`
+- **Hero image**: `src/app/_components/sections/HeroSection.ts`

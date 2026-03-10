@@ -14,7 +14,11 @@ export default function HeroSection() {
 
   return (
     <section className="grid gap-8 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] md:items-center animate-fade-in">
-      <div className="relative aspect-4/3 overflow-hidden rounded-2xl bg-(--bg)">
+      <div
+        className="no-save-media relative aspect-4/3 overflow-hidden rounded-2xl bg-(--bg)"
+        onContextMenu={(e) => e.preventDefault()}
+        onDragStart={(e) => e.preventDefault()}
+      >
         {canShowHero && (
           <CldImage
             src={HERO_IMAGE_SRC}
@@ -23,6 +27,7 @@ export default function HeroSection() {
             sizes="(min-width: 1024px) 640px, 100vw"
             className="object-cover object-bottom"
             preload={true}
+            draggable={false}
           />
         )}
       </div>
@@ -37,4 +42,3 @@ export default function HeroSection() {
     </section>
   );
 }
-

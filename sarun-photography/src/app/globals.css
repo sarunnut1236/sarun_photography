@@ -2,10 +2,10 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: "Trirong", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --font-sans: "Trirong", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
 }
 
 html[data-theme="light"] {
@@ -33,8 +33,26 @@ body {
 body {
   background-color: var(--bg);
   color: var(--text-primary);
-  font-family: "Trirong", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    "Trirong",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.no-save-media {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.no-save-media :is(img, video, canvas, svg) {
+  -webkit-user-drag: none;
+  user-drag: none;
+  user-select: none;
+  pointer-events: auto;
 }
 
 @keyframes fade-in {

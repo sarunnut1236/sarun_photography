@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { useLanguage } from "../../_providers/language-context";
 import { landscapePhotos } from "../../_content/landscape-photos";
@@ -10,15 +10,23 @@ import { buildLocalizedHref } from "../../_lib/routing";
 export default function LandscapePreviewSection() {
   const { language, t } = useLanguage();
   const searchParams = useSearchParams();
-  const preview = landscapePhotos.slice(2, 8);
+  const previewIds = [
+    "cityscape2",
+    "architecture5",
+    "nature3",
+    "landscape5",
+    "sky5",
+    "star2",
+  ] as const;
+  const preview = previewIds
+    .map((id) => landscapePhotos.find((p) => p.id === id))
+    .filter((p): p is NonNullable<typeof p> => p != null);
 
   return (
     <section className="space-y-6">
       <div className="flex items-baseline justify-between gap-4">
         <div>
-          <h2 className="text-lg font-semibold md:text-xl">
-            {t("landscapesSectionTitle")}
-          </h2>
+          <h2 className="text-lg font-semibold md:text-xl">{t("landscapesSectionTitle")}</h2>
         </div>
         <Link
           href={buildLocalizedHref("/landscape", searchParams, language)}
@@ -40,4 +48,3 @@ export default function LandscapePreviewSection() {
     </section>
   );
 }
-

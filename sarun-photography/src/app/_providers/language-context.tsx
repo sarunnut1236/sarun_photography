@@ -1,13 +1,6 @@
- "use client";
+"use client";
 
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 type LanguageCode = "en" | "th";
@@ -24,9 +17,7 @@ const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 const LANGUAGE_STORAGE_KEY = "sarun-language";
 
-function resolveInitialLanguage(
-  searchParams: URLSearchParams | null
-): LanguageCode {
+function resolveInitialLanguage(searchParams: URLSearchParams | null): LanguageCode {
   const fromQuery = searchParams?.get("lang");
   if (fromQuery === "en" || fromQuery === "th") {
     return fromQuery;
@@ -47,7 +38,7 @@ export function LanguageProvider({
   const router = useRouter();
 
   const [language, setLanguageState] = useState<LanguageCode>(() =>
-    resolveInitialLanguage(searchParams)
+    resolveInitialLanguage(searchParams),
   );
 
   useEffect(() => {
@@ -75,15 +66,13 @@ export function LanguageProvider({
         window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
       }
 
-      const current = new URLSearchParams(
-        searchParams ? searchParams.toString() : ""
-      );
+      const current = new URLSearchParams(searchParams ? searchParams.toString() : "");
       current.set("lang", lang);
       const query = current.toString();
       const url = query ? `${pathname}?${query}` : pathname;
       router.replace(url);
     },
-    [pathname, router, searchParams]
+    [pathname, router, searchParams],
   );
 
   const t = useCallback(
@@ -92,7 +81,7 @@ export function LanguageProvider({
       if (!entry) return key;
       return entry[language] ?? entry.en ?? key;
     },
-    [copy, language]
+    [copy, language],
   );
 
   const value = useMemo(
@@ -101,14 +90,10 @@ export function LanguageProvider({
       setLanguage,
       t,
     }),
-    [language, setLanguage, t]
+    [language, setLanguage, t],
   );
 
-  return (
-    <LanguageContext.Provider value={value}>
-      {children}
-    </LanguageContext.Provider>
-  );
+  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 }
 
 export function useLanguage(): LanguageContextValue {
@@ -118,4 +103,3 @@ export function useLanguage(): LanguageContextValue {
   }
   return ctx;
 }
-

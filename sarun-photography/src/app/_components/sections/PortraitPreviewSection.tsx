@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { useLanguage } from "../../_providers/language-context";
 import { portraitAlbums } from "../../_content/portrait-albums";
@@ -16,9 +16,7 @@ export default function PortraitPreviewSection() {
     <section className="space-y-6">
       <div className="flex items-baseline justify-between gap-4">
         <div>
-          <h2 className="text-lg font-semibold md:text-xl">
-            {t("portraitsSectionTitle")}
-          </h2>
+          <h2 className="text-lg font-semibold md:text-xl">{t("portraitsSectionTitle")}</h2>
         </div>
         <Link
           href={buildLocalizedHref("/portrait", searchParams, language)}
@@ -35,4 +33,3 @@ export default function PortraitPreviewSection() {
     </section>
   );
 }
-

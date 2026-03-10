@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -6,22 +6,12 @@ import { useLanguage } from "../../_providers/language-context";
 import { useColorMode } from "../../_providers/color-mode-context";
 import { buildLocalizedHref } from "../../_lib/routing";
 
-function NavLink({
-  href,
-  label,
-  isActive,
-}: {
-  href: string;
-  label: string;
-  isActive: boolean;
-}) {
+function NavLink({ href, label, isActive }: { href: string; label: string; isActive: boolean }) {
   return (
     <Link
       href={href}
       className={`text-sm md:text-base transition-colors ${
-        isActive
-          ? "text-(--text-primary)"
-          : "text-(--text-secondary) hover:text-(--text-primary)"
+        isActive ? "text-(--text-primary)" : "text-(--text-secondary) hover:text-(--text-primary)"
       }`}
     >
       {label}
@@ -40,7 +30,7 @@ function LanguageSwitcher() {
           type="button"
           onClick={() => setLanguage(code)}
           aria-pressed={language === code}
-            className={`px-2 py-0.5 rounded-full transition-colors ${
+          className={`px-2 py-0.5 rounded-full transition-colors ${
             language === code
               ? "bg-(--text-primary) text-(--bg)"
               : "text-(--text-secondary) hover:text-(--text-primary)"
@@ -86,9 +76,7 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-30 border-b border-(--border-subtle) bg-(--bg)/95 backdrop-blur">
       <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-3 sm:flex-row sm:items-center sm:justify-between">
         <Link href={buildLocalizedHref("/", searchParams, language)}>
-          <span className="text-sm font-semibold tracking-tight md:text-lg">
-            {t("siteTitle")}
-          </span>
+          <span className="text-sm font-semibold tracking-tight md:text-lg">{t("siteTitle")}</span>
         </Link>
         <nav className="flex w-full flex-wrap items-center gap-3 sm:w-auto sm:justify-end md:gap-4">
           <div className="flex flex-wrap items-center gap-3">
@@ -108,4 +96,3 @@ export default function SiteHeader() {
     </header>
   );
 }
-

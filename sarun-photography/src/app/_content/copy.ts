@@ -1,7 +1,7 @@
 export const copy = {
   siteTitle: {
     en: "Sarun Photography",
-    th: "ซารัน โฟโต้กราฟฟี",
+    th: "ซารัน โฟโตกราฟฟี",
   },
   navHome: {
     en: "Home",
@@ -9,19 +9,19 @@ export const copy = {
   },
   navPortrait: {
     en: "Portrait",
-    th: "ภาพบุคคล",
+    th: "บุคคล",
   },
   navLandscape: {
     en: "Landscape",
     th: "ภูมิทัศน์",
   },
   heroTitle: {
-    en: "Portrait & Landscape Photography in Bangkok",
-    th: "ภาพบุคคลและภูมิทัศน์ในกรุงเทพฯ",
+    en: "I don't know how to use a brush, so I'll draw my art using photons",
+    th: "ผมใช้พู่กันไม่เป็น เพราะฉะนั้นผมจะวาดภาพด้วยโฟตอน",
   },
   heroSubtitle: {
-    en: "Sarun is a photographer based in Bangkok, capturing portraits and landscapes with an elegant, minimal style.",
-    th: "ซารันเป็นช่างภาพในกรุงเทพฯ ที่ถ่ายทอดภาพบุคคลและภูมิทัศน์ในสไตล์มินิมอลที่สง่างาม",
+    en: "Art is not always about pencils or brushes. I won't let them undermine my aesthetics!",
+    th: "คำว่าศิลปะ ไม่จำเป็นต้องเกี่ยวกับดินสอสี หรือพู่กันเสมอไป ผมจะไม่ยอมให้เรื่องพวกนี้มาปิดกั้นสุนทรียภาพของผม",
   },
   portraitsSectionTitle: {
     en: "Portrait Sessions",
@@ -41,51 +41,58 @@ export const copy = {
   },
   landscapeThemeCityscape: {
     en: "Cityscape",
-    th: "ภาพเมือง",
+    th: "ภาพซิตี้สเคป",
   },
   landscapeThemeMinimalism: {
     en: "Minimalism",
-    th: "มินิมอล",
+    th: "ภาพมินิมอล",
   },
   landscapeThemeNature: {
     en: "Nature",
-    th: "ธรรมชาติ",
+    th: "ภาพธรรมชาติ",
   },
   landscapeThemeArchitecture: {
     en: "Architecture",
-    th: "สถาปัตยกรรม",
+    th: "ภาพสถาปัตยกรรม",
   },
   landscapeThemeStar: {
     en: "Stars",
-    th: "ดาว",
+    th: "ภาพดาว",
   },
   landscapeThemeLandscape: {
     en: "Landscape",
-    th: "ภูมิทัศน์",
+    th: "ภาพแลนด์สเคป",
   },
   landscapeThemeSky: {
     en: "Sky",
-    th: "ท้องฟ้า",
+    th: "ภาพท้องฟ้า",
   },
   footerLocation: {
     en: "Based in Bangkok, Thailand",
-    th: "ประจำอยู่ที่กรุงเทพฯ ประเทศไทย",
+    th: "รับงานที่กรุงเทพฯเป็นหลัก",
   },
   footerAvailability: {
     en: "Available for portrait sessions",
     th: "รับถ่ายภาพบุคคลตามนัดหมาย",
   },
-  footerRate: {
-    en: "2000 THB per portrait session",
-    th: "ค่าบริการถ่ายภาพบุคคลครั้งละ 2,000 บาท",
+  footerRateHalfDay: {
+    en: "Half day 1,500 THB",
+    th: "ครึ่งวัน 1500 บาท",
+  },
+  footerRateFullDay: {
+    en: "Full day 2,000 THB",
+    th: "เต็มวัน 2000 บาท",
   },
   footerEmailCta: {
     en: "Email",
     th: "อีเมล",
+  },
+  footerLineCta: {
+    en: "LINE",
+    th: "ไลน์",
   },
   footerInstagramLabel: {
     en: "Instagram",
     th: "อินสตาแกรม",
   },
 } as const;
-

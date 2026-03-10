@@ -23,19 +23,22 @@ export default function AlbumCarousel({
   const { language } = useLanguage();
   const { isEnabled } = useCloudinary();
   const [index, setIndex] = useState(0);
+  const [userInteracted, setUserInteracted] = useState(false);
   const touchStartX = useRef<number | null>(null);
   const touchCurrentX = useRef<number | null>(null);
 
   const photos = album.photos;
   const active = photos[index] ?? photos[0];
 
+  const shouldAutoplay = autoplay && !userInteracted;
+
   useEffect(() => {
-    if (!autoplay || photos.length <= 1) return;
+    if (!shouldAutoplay || photos.length <= 1) return;
     const id = window.setInterval(() => {
       setIndex((prev) => (prev + 1) % photos.length);
     }, intervalMs);
     return () => window.clearInterval(id);
-  }, [autoplay, intervalMs, photos.length]);
+  }, [shouldAutoplay, intervalMs, photos.length]);
 
   const goTo = (nextIndex: number) => {
     if (photos.length === 0) return;
@@ -44,6 +47,7 @@ export default function AlbumCarousel({
   };
 
   const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    if (!userInteracted) setUserInteracted(true);
     touchStartX.current = event.touches[0]?.clientX ?? null;
     touchCurrentX.current = touchStartX.current;
   };
@@ -77,15 +81,11 @@ export default function AlbumCarousel({
 
   const title = album.title[language] ?? album.title.en;
   const imageSrc =
-    active && "cloudinaryId" in active && active.cloudinaryId
-      ? active.cloudinaryId
-      : active?.src;
+    active && "cloudinaryId" in active && active.cloudinaryId ? active.cloudinaryId : active?.src;
 
   const hasMultiple = photos.length > 1;
 
-  const prevPhoto = hasMultiple
-    ? photos[(index - 1 + photos.length) % photos.length]
-    : undefined;
+  const prevPhoto = hasMultiple ? photos[(index - 1 + photos.length) % photos.length] : undefined;
   const nextPhoto = hasMultiple ? photos[(index + 1) % photos.length] : undefined;
 
   const prevImageSrc =
@@ -102,6 +102,11 @@ export default function AlbumCarousel({
   const showPrev = isEnabled && isCloudinarySrc(prevImageSrc ?? null);
   const showNext = isEnabled && isCloudinarySrc(nextImageSrc ?? null);
 
+  const activeSizes =
+    variant === "full"
+      ? "(min-width: 1024px) 720px, (min-width: 768px) 80vw, 100vw"
+      : "(min-width: 1024px) 320px, (min-width: 768px) 33vw, 100vw";
+
   return (
     <section
       aria-label={title}
@@ -110,14 +115,16 @@ export default function AlbumCarousel({
       className="flex justify-center"
     >
       <div
-        className={`flex w-full flex-col gap-3 ${
+        className={`flex w-full flex-col align-center gap-3 ${
           variant === "full" ? "max-w-4xl" : ""
         }`}
       >
         <div
-          className={`relative overflow-hidden rounded-xl bg-(--bg) ${
+          className={`no-save-media relative overflow-hidden rounded-xl bg-(--bg) ${
             variant === "full" ? "aspect-3/4" : "aspect-4/5"
           } max-h-[calc(100vh-96px)] animate-fade-in`}
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
@@ -132,6 +139,7 @@ export default function AlbumCarousel({
                   sizes="240px"
                   className="object-cover"
                   aria-hidden="true"
+                  draggable={false}
                 />
               </div>
             </div>
@@ -146,6 +154,7 @@ export default function AlbumCarousel({
                   sizes="240px"
                   className="object-cover"
                   aria-hidden="true"
+                  draggable={false}
                 />
               </div>
             </div>
@@ -155,7 +164,10 @@ export default function AlbumCarousel({
               className={`relative z-10 h-full cursor-pointer transition-opacity duration-500 ${
                 variant === "full" ? "mx-auto w-4/5" : "w-full"
               }`}
-              onClick={() => hasMultiple && goTo(index + 1)}
+              onClick={() => {
+                if (!userInteracted) setUserInteracted(true);
+                if (hasMultiple) goTo(index + 1);
+              }}
               role="button"
               aria-label="Next photo"
             >
@@ -164,16 +176,20 @@ export default function AlbumCarousel({
                 src={imageSrc as string}
                 alt={active.alt[language] ?? active.alt.en}
                 fill
-                sizes="(min-width: 1024px) 320px, (min-width: 768px) 33vw, 100vw"
+                sizes={activeSizes}
                 className="object-contain"
+                draggable={false}
               />
             </div>
           )}
           {hasMultiple && (
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-2">
+            <div className="z-10 pointer-events-none absolute inset-0 flex items-center justify-between px-2">
               <button
                 type="button"
-                onClick={() => goTo(index - 1)}
+                onClick={() => {
+                  if (!userInteracted) setUserInteracted(true);
+                  goTo(index - 1);
+                }}
                 className="pointer-events-auto inline-flex h-7 w-7 items-center justify-center rounded-full bg-black/40 text-xs text-white backdrop-blur-sm"
                 aria-label="Previous photo"
               >
@@ -181,7 +197,10 @@ export default function AlbumCarousel({
               </button>
               <button
                 type="button"
-                onClick={() => goTo(index + 1)}
+                onClick={() => {
+                  if (!userInteracted) setUserInteracted(true);
+                  goTo(index + 1);
+                }}
                 className="pointer-events-auto inline-flex h-7 w-7 items-center justify-center rounded-full bg-black/40 text-xs text-white backdrop-blur-sm"
                 aria-label="Next photo"
               >
@@ -191,9 +210,7 @@ export default function AlbumCarousel({
           )}
         </div>
         <div className="space-y-1">
-          <p className="text-xs uppercase tracking-wide text-(--text-secondary)">
-            {title}
-          </p>
+          <p className="text-xs uppercase tracking-wide text-(--text-secondary)">{title}</p>
           {active && (
             <p className="text-sm text-(--text-primary)">
               {active.description[language] ?? active.description.en}
@@ -205,7 +222,10 @@ export default function AlbumCarousel({
                 <button
                   key={photo.id}
                   type="button"
-                  onClick={() => goTo(i)}
+                  onClick={() => {
+                    if (!userInteracted) setUserInteracted(true);
+                    goTo(i);
+                  }}
                   className={`h-1.5 flex-1 rounded-full transition-colors ${
                     i === index ? "bg-(--text-primary)" : "bg-(--border-subtle)"
                   }`}
@@ -219,4 +239,3 @@ export default function AlbumCarousel({
     </section>
   );
 }
-

@@ -7,45 +7,59 @@ export type LandscapePhoto = Photo & {
 
 export const landscapePhotos: LandscapePhoto[] = [
   {
-    id: "architecture1",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085424/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_kqmb44.png",
-    alt: { en: "Temple architecture framed against the evening sky", th: "สถาปัตยกรรมวัดตัดกับท้องฟ้ายามเย็น" },
-    description: { en: "Details of a historic temple captured in warm light.", th: "รายละเอียดของวัดเก่าแก่ในแสงอบอุ่น" },
-    theme: "architecture",
-  },
-  {
-    id: "architecture2",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773084029/%E0%B8%87%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%87%E0%B8%87%E0%B9%88%E0%B8%B0-1_vwnavi.jpg",
-    alt: { en: "Tall building against the sky", th: "อาคารสูงตัดกับท้องฟ้า" },
-    description: { en: "Vertical lines of urban architecture.", th: "เส้นสายแนวตั้งของสถาปัตยกรรมเมือง" },
+    id: "architecture4",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085361/%E0%B8%87%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A._%E0%B8%9E%E0%B8%A4%E0%B8%A8%E0%B8%88%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%99_10_2562_jsxxip.jpg",
+    alt: {
+      en: "Wide view of city buildings under a soft sky",
+      th: "มุมกว้างของอาคารในเมืองใต้ท้องฟ้านุ่มนวล",
+    },
+    description: {
+      en: "Urban architecture stretching toward the horizon.",
+      th: "สถาปัตยกรรมเมืองทอดยาวไปจนสุดขอบฟ้า",
+    },
     theme: "architecture",
   },
   {
     id: "architecture3",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085359/%E0%B8%87%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A._%E0%B8%9E%E0%B8%A4%E0%B8%A8%E0%B8%88%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%99_10_2562-2_wtwyqh.jpg",
     alt: { en: "Golden light over a tall city stupa", th: "แสงทองส่ององค์เจดีย์ในตัวเมือง" },
-    description: { en: "Architectural lines and soft light shape the city skyline.", th: "เส้นสายสถาปัตยกรรมและแสงนุ่มขับเน้นเส้นขอบฟ้าเมือง" },
+    description: {
+      en: "Architectural lines and soft light shape the city skyline.",
+      th: "เส้นสายสถาปัตยกรรมและแสงนุ่มขับเน้นเส้นขอบฟ้าเมือง",
+    },
     theme: "architecture",
   },
   {
-    id: "architecture4",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085361/%E0%B8%87%E0%B9%88%E0%B8%A7%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A._%E0%B8%9E%E0%B8%A4%E0%B8%A8%E0%B8%88%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%99_10_2562_jsxxip.jpg",
-    alt: { en: "Wide view of city buildings under a soft sky", th: "มุมกว้างของอาคารในเมืองใต้ท้องฟ้านุ่มนวล" },
-    description: { en: "Urban architecture stretching toward the horizon.", th: "สถาปัตยกรรมเมืองทอดยาวไปจนสุดขอบฟ้า" },
+    id: "architecture1",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085424/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_kqmb44.png",
+    alt: {
+      en: "Temple architecture framed against the evening sky",
+      th: "สถาปัตยกรรมวัดตัดกับท้องฟ้ายามเย็น",
+    },
+    description: {
+      en: "Details of a historic temple captured in warm light.",
+      th: "รายละเอียดของวัดเก่าแก่ในแสงอบอุ่น",
+    },
     theme: "architecture",
   },
   {
     id: "architecture5",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083984/20220105_103906990_iOS_qfgzdg.jpg",
     alt: { en: "Architectural detail and structure", th: "รายละเอียดสถาปัตยกรรม" },
-    description: { en: "Lines and form in built environment.", th: "เส้นสายและรูปทรงในสิ่งปลูกสร้าง" },
+    description: {
+      en: "Lines and form in built environment.",
+      th: "เส้นสายและรูปทรงในสิ่งปลูกสร้าง",
+    },
     theme: "architecture",
   },
   {
     id: "cityscape1",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085054/%E0%B9%84%E0%B8%9F%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%AD%E0%B8%99%E0%B8%B8%E0%B8%AF%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%9B%E0%B9%84%E0%B8%95%E0%B8%A2%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B4%E0%B8%942_vmhazp.jpg",
     alt: { en: "Democracy Monument light trails at night", th: "อนุสรณ์ประชาธิปไตยแสงไฟกลางคืน" },
-    description: { en: "Long exposure captures the motion of traffic around the monument.", th: "สปีดต่ำจับการเคลื่อนไหวรอบอนุสรณ์" },
+    description: {
+      en: "Long exposure captures the motion of traffic around the monument.",
+      th: "สปีดต่ำจับการเคลื่อนไหวรอบอนุสรณ์",
+    },
     theme: "cityscape",
   },
   {
@@ -56,10 +70,16 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "cityscape",
   },
   {
-    id: "cityscape3",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772907642/%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%96%E0%B8%A7%E0%B8%A7%E0%B8%B1%E0%B8%87_%E0%B8%81%E0%B8%B8%E0%B8%A1%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C_08_2568_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_2_qph0oh.jpg",
-    alt: { en: "Palace area at night", th: "แถวพระราชวังยามค่ำคืน" },
-    description: { en: "Urban night scene near historical monuments.", th: "บรรยากาศกลางคืนใกล้องค์กรุระหวาง" },
+    id: "cityscape5",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085452/%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B9%84%E0%B8%9F%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B52_ljgwki.jpg",
+    alt: {
+      en: "City lights streaking through the streets at night",
+      th: "แสงไฟรถวิ่งผ่านถนนในเมืองยามค่ำคืน",
+    },
+    description: {
+      en: "Long exposure trails reveal the flow of Bangkok traffic.",
+      th: "เส้นแสงสปีดต่ำบอกเล่าการเคลื่อนไหวของการจราจรในกรุงเทพฯ",
+    },
     theme: "cityscape",
   },
   {
@@ -70,10 +90,13 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "cityscape",
   },
   {
-    id: "cityscape5",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085452/%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B9%84%E0%B8%9F%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B52_ljgwki.jpg",
-    alt: { en: "City lights streaking through the streets at night", th: "แสงไฟรถวิ่งผ่านถนนในเมืองยามค่ำคืน" },
-    description: { en: "Long exposure trails reveal the flow of Bangkok traffic.", th: "เส้นแสงสปีดต่ำบอกเล่าการเคลื่อนไหวของการจราจรในกรุงเทพฯ" },
+    id: "cityscape3",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772907642/%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%96%E0%B8%A7%E0%B8%A7%E0%B8%B1%E0%B8%87_%E0%B8%81%E0%B8%B8%E0%B8%A1%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C_08_2568_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_2_qph0oh.jpg",
+    alt: { en: "Palace area at night", th: "แถวพระราชวังยามค่ำคืน" },
+    description: {
+      en: "Urban night scene near historical monuments.",
+      th: "บรรยากาศกลางคืนใกล้องค์กรุระหวาง",
+    },
     theme: "cityscape",
   },
   {
@@ -84,10 +107,10 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "cityscape",
   },
   {
-    id: "landscape1",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772946697/%E0%B8%A0%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B6%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%B1%E0%B8%9A-1_l55mfp.jpg",
-    alt: { en: "Phu Kradueng panorama", th: "ทิวทัศน์ภูกระดึง" },
-    description: { en: "Mountain vista from Phu Kradueng.", th: "วิวภูเขาจากภูกระดึง" },
+    id: "landscape6",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773084262/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_14_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_1_m9bsgd.jpg",
+    alt: { en: "Mountain path and scenery", th: "ทางเดินและทิวทัศน์ภูเขา" },
+    description: { en: "Trail through mountain terrain.", th: "ทางเดินผ่านภูมิประเทศภูเขา" },
     theme: "landscape",
   },
   {
@@ -98,20 +121,6 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "landscape",
   },
   {
-    id: "landscape3",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772908854/Thongphaphum_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_21_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_26_rzw91j.jpg",
-    alt: { en: "Wide mountain landscape", th: "ภูมิทัศน์ภูเขากว้าง" },
-    description: { en: "Panoramic view of mountain ranges.", th: "มุมกว้างของเทือกเขา" },
-    theme: "landscape",
-  },
-  {
-    id: "landscape4",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772947219/Thongphaphum_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_21_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_14_me3n8f.jpg",
-    alt: { en: "Misty valley view", th: "วิวหุบเขาในหมอก" },
-    description: { en: "Valley and hills in atmospheric light.", th: "หุบเขาและเนินในแสงบรรยากาศ" },
-    theme: "landscape",
-  },
-  {
     id: "landscape5",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772908874/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_16_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_54_bfqvof.jpg",
     alt: { en: "Phu Kradueng plateau", th: "ที่ราบภูกระดึง" },
@@ -119,10 +128,30 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "landscape",
   },
   {
-    id: "landscape6",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773084262/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_14_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_1_m9bsgd.jpg",
-    alt: { en: "Mountain path and scenery", th: "ทางเดินและทิวทัศน์ภูเขา" },
-    description: { en: "Trail through mountain terrain.", th: "ทางเดินผ่านภูมิประเทศภูเขา" },
+    id: "landscape8",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772947204/Chiang_Khan_Trip_%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1_07_2567_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_46_c6u8mj.jpg",
+    alt: {
+      en: "City street reflections after rain at night",
+      th: "เงาสะท้อนบนถนนหลังฝนตกยามค่ำคืน",
+    },
+    description: {
+      en: "Neon colors soften as they reflect across the wet street.",
+      th: "แสงนีออนนุ่มนวลเมื่อสะท้อนบนพื้นถนนเปียกฝน",
+    },
+    theme: "landscape",
+  },
+  {
+    id: "landscape3",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772908854/Thongphaphum_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_21_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_26_rzw91j.jpg",
+    alt: { en: "Wide mountain landscape", th: "ภูมิทัศน์ภูเขากว้าง" },
+    description: { en: "Panoramic view of mountain ranges.", th: "มุมกว้างของเทือกเขา" },
+    theme: "landscape",
+  },
+  {
+    id: "landscape1",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772946697/%E0%B8%A0%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B6%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%B1%E0%B8%9A-1_l55mfp.jpg",
+    alt: { en: "Phu Kradueng panorama", th: "ทิวทัศน์ภูกระดึง" },
+    description: { en: "Mountain vista from Phu Kradueng.", th: "วิวภูเขาจากภูกระดึง" },
     theme: "landscape",
   },
   {
@@ -133,17 +162,20 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "landscape",
   },
   {
-    id: "landscape8",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772947204/Chiang_Khan_Trip_%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1_07_2567_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_46_c6u8mj.jpg",
-    alt: { en: "City street reflections after rain at night", th: "เงาสะท้อนบนถนนหลังฝนตกยามค่ำคืน" },
-    description: { en: "Neon colors soften as they reflect across the wet street.", th: "แสงนีออนนุ่มนวลเมื่อสะท้อนบนพื้นถนนเปียกฝน" },
+    id: "landscape4",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772947219/Thongphaphum_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_21_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_14_me3n8f.jpg",
+    alt: { en: "Misty valley view", th: "วิวหุบเขาในหมอก" },
+    description: { en: "Valley and hills in atmospheric light.", th: "หุบเขาและเนินในแสงบรรยากาศ" },
     theme: "landscape",
   },
   {
-    id: "minimal1",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085193/%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%AA%E0%B8%A7%E0%B8%A225630509_s5vdzw.jpg",
-    alt: { en: "Minimalist composition with soft tones and open space", th: "องค์ประกอบมินิมอลด้วยโทนอ่อนและพื้นที่โล่ง" },
-    description: { en: "Clean lines and gentle gradients create a calm scene.", th: "เส้นสายที่เรียบง่ายและโทนไล่สีที่นุ่มนวลสร้างบรรยากาศสงบ" },
+    id: "minimal5",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083654/%E0%B8%94%E0%B8%AD%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B9%86._%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1_31_2562-9_zirfxr.jpg",
+    alt: { en: "Minimal horizon and gradient", th: "เส้นขอบฟ้าและไล่โทนมินิมอล" },
+    description: {
+      en: "Clean horizon with soft color transition.",
+      th: "เส้นฟ้าสะอาดกับการไล่โทนนุ่ม",
+    },
     theme: "minimalism",
   },
   {
@@ -161,24 +193,16 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "minimalism",
   },
   {
-    id: "minimal4",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085447/%E0%B8%94%E0%B8%AD%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B9%86._%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B8%B2%E0%B8%84%E0%B8%A1_10_2562-12_uwc2xn.jpg",
-    alt: { en: "Calm sea horizon in soft evening light", th: "เส้นขอบทะเลในแสงเย็นนุ่มนวล" },
-    description: { en: "A minimal line between sea and sky with gentle tones.", th: "เส้นแบ่งบาง ๆ ระหว่างทะเลและท้องฟ้าในโทนสีเรียบง่าย" },
-    theme: "minimalism",
-  },
-  {
-    id: "minimal5",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083654/%E0%B8%94%E0%B8%AD%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B9%86._%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1_31_2562-9_zirfxr.jpg",
-    alt: { en: "Minimal horizon and gradient", th: "เส้นขอบฟ้าและไล่โทนมินิมอล" },
-    description: { en: "Clean horizon with soft color transition.", th: "เส้นฟ้าสะอาดกับการไล่โทนนุ่ม" },
-    theme: "minimalism",
-  },
-  {
-    id: "minimal6",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085082/Thongphaphum_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_21_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_11_vm0jqn.jpg",
-    alt: { en: "Minimal mountain composition", th: "องค์ประกอบภูเขามินิมอล" },
-    description: { en: "Simple forms in mountain scenery.", th: "รูปทรงเรียบง่ายในภูเขา" },
+    id: "minimal1",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085193/%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%AA%E0%B8%A7%E0%B8%A225630509_s5vdzw.jpg",
+    alt: {
+      en: "Minimalist composition with soft tones and open space",
+      th: "องค์ประกอบมินิมอลด้วยโทนอ่อนและพื้นที่โล่ง",
+    },
+    description: {
+      en: "Clean lines and gentle gradients create a calm scene.",
+      th: "เส้นสายที่เรียบง่ายและโทนไล่สีที่นุ่มนวลสร้างบรรยากาศสงบ",
+    },
     theme: "minimalism",
   },
   {
@@ -189,13 +213,6 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "minimalism",
   },
   {
-    id: "minimal9",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085406/%E0%B8%88%E0%B8%B4%E0%B9%8B%E0%B8%A7%E0%B8%A7%E0%B8%A7%E0%B8%A7_%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1_04_2021_tbol2j.png",
-    alt: { en: "Tiny light on a distant hill at dusk", th: "แสงเล็ก ๆ บนเนินเขาไกลในยามโพล้เพล้" },
-    description: { en: "A small subject anchored in a wide negative space.", th: "จุดเล็ก ๆ ท่ามกลางพื้นที่ว่างกว้างสร้างความรู้สึกโดดเดี่ยว" },
-    theme: "minimalism",
-  },
-  {
     id: "minimal10",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772947204/Chiang_Khan_Trip_%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1_07_2567_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_47_wqyxlu.jpg",
     alt: { en: "Quiet riverside minimal", th: "ริมแม่น้ำมินิมอลเงียบสงบ" },
@@ -203,10 +220,27 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "minimalism",
   },
   {
-    id: "nature1",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083821/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%B0._%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_08_2561-2_olglxy.jpg",
-    alt: { en: "Nature scene reimagined", th: "ภาพธรรมชาติเล่าใหม่" },
-    description: { en: "Natural landscape in reworked light.", th: "ภูมิทัศน์ธรรมชาติในแสงที่แต่งใหม่" },
+    id: "landscape9",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085082/Thongphaphum_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_21_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_11_vm0jqn.jpg",
+    alt: { en: "Minimal mountain composition", th: "องค์ประกอบภูเขามินิมอล" },
+    description: { en: "Simple forms in mountain scenery.", th: "รูปทรงเรียบง่ายในภูเขา" },
+    theme: "landscape",
+  },
+  {
+    id: "sky8",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085406/%E0%B8%88%E0%B8%B4%E0%B9%8B%E0%B8%A7%E0%B8%A7%E0%B8%A7%E0%B8%A7_%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1_04_2021_tbol2j.png",
+    alt: { en: "Tiny light on a distant hill at dusk", th: "แสงเล็ก ๆ บนเนินเขาไกลในยามโพล้เพล้" },
+    description: {
+      en: "A small subject anchored in a wide negative space.",
+      th: "จุดเล็ก ๆ ท่ามกลางพื้นที่ว่างกว้างสร้างความรู้สึกโดดเดี่ยว",
+    },
+    theme: "sky",
+  },
+  {
+    id: "nature4",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083932/Process_practice_1_sanooi.jpg",
+    alt: { en: "Natural landscape practice", th: "ฝึกถ่ายธรรมชาติ" },
+    description: { en: "Nature scene in processed light.", th: "ภาพธรรมชาติหลังแต่งแสง" },
     theme: "nature",
   },
   {
@@ -217,17 +251,17 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "nature",
   },
   {
+    id: "nature10",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773084338/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_14_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_8_tvss9e.jpg",
+    alt: { en: "Mountain trail and scenery", th: "ทางเดินเขาและทิวทัศน์" },
+    description: { en: "Path through natural terrain.", th: "ทางเดินผ่านธรรมชาติ" },
+    theme: "nature",
+  },
+  {
     id: "nature3",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083863/%E0%B8%9F%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%9A_kwwjc6.jpg",
     alt: { en: "Lightning strike", th: "ฟ้าผ่า" },
     description: { en: "A bolt of lightning cuts through the storm.", th: "สายฟ้าส่องในพายุ" },
-    theme: "nature",
-  },
-  {
-    id: "nature4",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083932/Process_practice_1_sanooi.jpg",
-    alt: { en: "Natural landscape practice", th: "ฝึกถ่ายธรรมชาติ" },
-    description: { en: "Nature scene in processed light.", th: "ภาพธรรมชาติหลังแต่งแสง" },
     theme: "nature",
   },
   {
@@ -238,24 +272,36 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "nature",
   },
   {
-    id: "nature6",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085379/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_15_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_17_np5g2f.jpg",
-    alt: { en: "Layers of hills under soft morning haze", th: "แนวเขาซ้อนชั้นใต้หมอกอ่อนยามเช้า" },
-    description: { en: "Soft gradients separate each distant ridge at sunrise.", th: "ไล่ระดับโทนอ่อนแยกชั้นของแนวเขาในยามพระอาทิตย์ขึ้น" },
+    id: "nature1",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083821/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%B0._%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_08_2561-2_olglxy.jpg",
+    alt: { en: "Nature scene reimagined", th: "ภาพธรรมชาติเล่าใหม่" },
+    description: {
+      en: "Natural landscape in reworked light.",
+      th: "ภูมิทัศน์ธรรมชาติในแสงที่แต่งใหม่",
+    },
     theme: "nature",
   },
   {
-    id: "nature7",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085062/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_16_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_39_iby8kh.jpg",
-    alt: { en: "Mountain forest and sky", th: "ป่าเขาและท้องฟ้า" },
-    description: { en: "Trees reaching toward the clouds.", th: "ต้นไม้ยื่นไปหาเมฆ" },
+    id: "nature6",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085379/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_15_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_17_np5g2f.jpg",
+    alt: { en: "Layers of hills under soft morning haze", th: "แนวเขาซ้อนชั้นใต้หมอกอ่อนยามเช้า" },
+    description: {
+      en: "Soft gradients separate each distant ridge at sunrise.",
+      th: "ไล่ระดับโทนอ่อนแยกชั้นของแนวเขาในยามพระอาทิตย์ขึ้น",
+    },
     theme: "nature",
   },
   {
     id: "nature8",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085377/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_15_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_19_yalxow.jpg",
-    alt: { en: "Sunset light breaking through mountain clouds", th: "แสงพระอาทิตย์ยามเย็นลอดผ่านกลุ่มเมฆเหนือภูเขา" },
-    description: { en: "Warm light cuts through clouds to paint the valley below.", th: "แสงอุ่นเจาะผ่านเมฆทาสีหุบเขาด้านล่าง" },
+    alt: {
+      en: "Sunset light breaking through mountain clouds",
+      th: "แสงพระอาทิตย์ยามเย็นลอดผ่านกลุ่มเมฆเหนือภูเขา",
+    },
+    description: {
+      en: "Warm light cuts through clouds to paint the valley below.",
+      th: "แสงอุ่นเจาะผ่านเมฆทาสีหุบเขาด้านล่าง",
+    },
     theme: "nature",
   },
   {
@@ -263,13 +309,6 @@ export const landscapePhotos: LandscapePhoto[] = [
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085047/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_15_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_18_kikpat.jpg",
     alt: { en: "Mountain meadow and clouds", th: "ทุ่งหญ้าเขาและเมฆ" },
     description: { en: "Open space among the peaks.", th: "ที่โล่งระหว่างยอดเขา" },
-    theme: "nature",
-  },
-  {
-    id: "nature10",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773084338/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_14_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_8_tvss9e.jpg",
-    alt: { en: "Mountain trail and scenery", th: "ทางเดินเขาและทิวทัศน์" },
-    description: { en: "Path through natural terrain.", th: "ทางเดินผ่านธรรมชาติ" },
     theme: "nature",
   },
   {
@@ -322,17 +361,20 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "sky",
   },
   {
-    id: "star1",
-    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085355/%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B9%81%E0%B8%95%E0%B8%87%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%992.%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_07_2561_al4rwo.jpg",
-    alt: { en: "Stars rising above a quiet foreground", th: "ดาวลอยเหนือฉากหน้าอันเงียบสงบ" },
-    description: { en: "Stars stretch across the sky in a long exposure night scene.", th: "เส้นทางดาวพาดผ่านท้องฟ้าในภาพถ่ายสปีดต่ำยามค่ำคืน" },
-    theme: "star",
-  },
-  {
     id: "star2",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083937/Process_practice_2_kukcar.jpg",
     alt: { en: "Night sky with stars", th: "ท้องฟ้ายามค่ำกับดาว" },
     description: { en: "Astrophotography practice and processing.", th: "ฝึกถ่ายดาวและแต่งภาพ" },
+    theme: "star",
+  },
+  {
+    id: "star1",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085355/%E0%B8%9D%E0%B8%B6%E0%B8%81%E0%B9%81%E0%B8%95%E0%B8%87%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%992.%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_07_2561_al4rwo.jpg",
+    alt: { en: "Stars rising above a quiet foreground", th: "ดาวลอยเหนือฉากหน้าอันเงียบสงบ" },
+    description: {
+      en: "Stars stretch across the sky in a long exposure night scene.",
+      th: "เส้นทางดาวพาดผ่านท้องฟ้าในภาพถ่ายสปีดต่ำยามค่ำคืน",
+    },
     theme: "star",
   },
 ];
