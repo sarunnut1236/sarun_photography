@@ -19,12 +19,12 @@ export type PortraitAlbum = {
 
 export const portraitAlbums: PortraitAlbum[] = [
   {
-    id: "fern",
+    id: "ferntam",
     title: { en: "City wander", th: "เที่ยวในเมือง" },
     photos: [
       {
-        id: "fern1",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772907843/_SRN8095_nxaqe4.jpg",
+        id: "ferntam1",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249647/FernTam_2569_3_p9ck6p.jpg",
         alt: {
           en: "Beautiful portraits in the city",
           th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
@@ -35,8 +35,8 @@ export const portraitAlbums: PortraitAlbum[] = [
         },
       },
       {
-        id: "fern2",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772907826/_SRN8038_dfe2v4.jpg",
+        id: "ferntam2",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249649/FernTam_2569_12_uve3ws.jpg",
         alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
         description: {
           en: "Beautiful portraits in the city",
@@ -44,8 +44,8 @@ export const portraitAlbums: PortraitAlbum[] = [
         },
       },
       {
-        id: "fern3",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772907790/_SRN8066_semzwq.jpg",
+        id: "ferntam3",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249649/FernTam_2569_11_gkyh9v.jpg",
         alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
         description: {
           en: "Beautiful portraits in the city",
@@ -53,8 +53,80 @@ export const portraitAlbums: PortraitAlbum[] = [
         },
       },
       {
-        id: "fern4",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1772906632/_SRN8139_l5mq0n.jpg",
+        id: "ferntam4",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249642/FernTam_2569_10_zm8vin.jpg",
+        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
+        description: {
+          en: "Beautiful portraits in the city",
+          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
+        },
+      },
+      {
+        id: "ferntam5",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249641/FernTam_2569_8_qigdec.jpg",
+        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
+        description: {
+          en: "Beautiful portraits in the city",
+          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
+        },
+      },
+      {
+        id: "ferntam6",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249642/FernTam_2569_7_xktbec.jpg",
+        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
+        description: {
+          en: "Beautiful portraits in the city",
+          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
+        },
+      },
+      {
+        id: "ferntam7",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249645/FernTam_2569_5_mja56b.jpg",
+        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
+        description: {
+          en: "Beautiful portraits in the city",
+          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
+        },
+      },
+      {
+        id: "ferntam8",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249643/FernTam_2569_1_qmcijg.jpg",
+        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
+        description: {
+          en: "Beautiful portraits in the city",
+          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
+        },
+      },
+      {
+        id: "ferntam9",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249641/FernTam_2569_6_g3ippu.jpg",
+        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
+        description: {
+          en: "Beautiful portraits in the city",
+          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
+        },
+      },
+      {
+        id: "ferntam11",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249644/FernTam_2569_9_tveb0c.jpg",
+        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
+        description: {
+          en: "Beautiful portraits in the city",
+          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
+        },
+      },
+      {
+        id: "ferntam12",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249651/FernTam_2569_2_lvuobp.jpg",
+        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
+        description: {
+          en: "Beautiful portraits in the city",
+          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
+        },
+      },
+      {
+        id: "ferntam13",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773249644/FernTam_2569_4_xzzqdb.jpg",
         alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
         description: {
           en: "Beautiful portraits in the city",
@@ -74,8 +146,8 @@ export const portraitAlbums: PortraitAlbum[] = [
         description: { en: "Walking around Chulalongkorn University", th: "ถ่ายรูปเล่นแถวจุฬาฯ" },
       },
       {
-        id: "aing2",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083104/%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%AD%E0%B8%B4%E0%B8%87_%E0%B8%A1%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%A1_22_2568_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_20_xlp7ev.jpg",
+        id: "aing5",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083079/%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%AD%E0%B8%B4%E0%B8%87_%E0%B8%A1%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%A1_22_2568_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_47_ebvfvq.jpg",
         alt: { en: "Walking around Chulalongkorn University", th: "ถ่ายรูปเล่นแถวจุฬาฯ" },
         description: { en: "Walking around Chulalongkorn University", th: "ถ่ายรูปเล่นแถวจุฬาฯ" },
       },
@@ -92,8 +164,8 @@ export const portraitAlbums: PortraitAlbum[] = [
         description: { en: "Walking around Chulalongkorn University", th: "ถ่ายรูปเล่นแถวจุฬาฯ" },
       },
       {
-        id: "aing5",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083079/%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%AD%E0%B8%B4%E0%B8%87_%E0%B8%A1%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%A1_22_2568_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_47_ebvfvq.jpg",
+        id: "aing2",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083104/%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%AD%E0%B8%B4%E0%B8%87_%E0%B8%A1%E0%B8%B5%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%A1_22_2568_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_20_xlp7ev.jpg",
         alt: { en: "Walking around Chulalongkorn University", th: "ถ่ายรูปเล่นแถวจุฬาฯ" },
         description: { en: "Walking around Chulalongkorn University", th: "ถ่ายรูปเล่นแถวจุฬาฯ" },
       },
@@ -110,6 +182,30 @@ export const portraitAlbums: PortraitAlbum[] = [
     title: { en: "Graduation photoshoot", th: "ถ่ายรูปรับปริญญา" },
     photos: [
       {
+        id: "nam4",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083009/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_4_nbfmm9.jpg",
+        alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
+        description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
+      },
+      {
+        id: "nam7",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773082994/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_46_dirty0.jpg",
+        alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
+        description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
+      },
+      {
+        id: "nam5",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083005/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_76_jdz2qv.jpg",
+        alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
+        description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
+      },
+      {
+        id: "nam3",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083032/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_107_nmcbml.jpg",
+        alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
+        description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
+      },
+      {
         id: "nam1",
         src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083083/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_3_ebexgb.jpg",
         alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
@@ -122,32 +218,8 @@ export const portraitAlbums: PortraitAlbum[] = [
         description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
       },
       {
-        id: "nam3",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083032/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_107_nmcbml.jpg",
-        alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-        description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-      },
-      {
-        id: "nam4",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083009/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_4_nbfmm9.jpg",
-        alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-        description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-      },
-      {
-        id: "nam5",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083005/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_76_jdz2qv.jpg",
-        alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-        description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-      },
-      {
         id: "nam6",
         src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773083001/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_49_wnrfeh.jpg",
-        alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-        description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-      },
-      {
-        id: "nam7",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773082994/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_46_dirty0.jpg",
         alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
         description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
       },
@@ -162,57 +234,6 @@ export const portraitAlbums: PortraitAlbum[] = [
         src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773162948/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2_2569_44_hiomh8.jpg",
         alt: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
         description: { en: "Graduation portraits 2025", th: "ชุดภาพรับปริญญา 2568" },
-      },
-    ],
-  },
-  {
-    id: "tammy",
-    title: { en: "Street style", th: "ลุคสตรีท" },
-    photos: [
-      {
-        id: "tammy1",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773163030/_SRN8041_mwy47g.jpg",
-        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
-        description: {
-          en: "Beautiful portraits in the city",
-          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
-        },
-      },
-      {
-        id: "tammy2",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773163088/_SRN7994_lsacs3.jpg",
-        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
-        description: {
-          en: "Beautiful portraits in the city",
-          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
-        },
-      },
-      {
-        id: "tammy3",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773163115/_SRN8054_gelxxe.jpg",
-        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
-        description: {
-          en: "Beautiful portraits in the city",
-          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
-        },
-      },
-      {
-        id: "tammy4",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773163136/_SRN8146_lxkut4.jpg",
-        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
-        description: {
-          en: "Beautiful portraits in the city",
-          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
-        },
-      },
-      {
-        id: "tammy5",
-        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773163152/_SRN8151_autn4p.jpg",
-        alt: { en: "Beautiful portraits in the city", th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว" },
-        description: {
-          en: "Beautiful portraits in the city",
-          th: "ถ่ายรูปสวย ๆ ในเมืองระหว่างเดินเที่ยว",
-        },
       },
     ],
   },

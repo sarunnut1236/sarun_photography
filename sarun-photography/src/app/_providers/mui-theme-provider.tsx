@@ -13,3 +13,4 @@ const theme = createTheme({
 export default function MuiThemeProvider({ children }: { children: ReactNode }) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }
+

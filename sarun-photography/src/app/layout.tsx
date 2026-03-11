@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Suspense } from "react";
 import "./globals.css";
-import MuiThemeProvider from "./mui-theme-provider";
+import MuiThemeProvider from "./_providers/mui-theme-provider";
 import { ColorModeProvider } from "./_providers/color-mode-context";
 import { LanguageProvider } from "./_providers/language-context";
 import { copy } from "./_content/copy";
