@@ -1,4 +1,4 @@
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import { isCloudinarySrc, useCloudinary } from "../../_hooks/use-cloudinary";
 
 interface PhotoTileProps {
@@ -18,7 +18,7 @@ export default function PhotoTile({ src, alt, description }: PhotoTileProps) {
       onDragStart={(e) => e.preventDefault()}
     >
       {shouldShow && (
-        <CldImage
+        <Image
           src={src}
           alt={alt}
           fill

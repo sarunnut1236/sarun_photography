@@ -1,20 +1,22 @@
-This is how to use Cloudinary
-```
-"use client";
-import { CldImage } from 'next-cloudinary';
+This is how to use Cloudinary with `next/image`:
 
-// By default, the CldImage component applies auto-format and auto-quality to all delivery URLs for optimized delivery.
+```tsx
+"use client";
+import Image from "next/image";
+
+// Store full Cloudinary URLs (or minimal-transform URLs) in your content files.
+// Next.js will handle responsive sizing and optimization, while Cloudinary serves originals.
 export default function Page() {
   return (
-    <CldImage
-      src="cld-sample-5" // Use this sample image or upload your own via the Media Library
-      width="500" // Transform the image: auto-crop to square aspect_ratio
-      height="500"
-      crop={{
-        type: 'auto',
-        source: true
-      }}
-    />
+    <div className="relative h-[500px] w-[500px]">
+      <Image
+        src="https://res.cloudinary.com/your_cloud_name/image/upload/v1234567890/sample.jpg"
+        alt="Sample Cloudinary image"
+        fill
+        sizes="500px"
+        className="object-cover"
+      />
+    </div>
   );
 }
 ```

@@ -1,6 +1,6 @@
 "use client";
 
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import { useLanguage } from "../../_providers/language-context";
 import { useCloudinary, isCloudinarySrc } from "../../_hooks/use-cloudinary";
 
@@ -20,13 +20,13 @@ export default function HeroSection() {
         onDragStart={(e) => e.preventDefault()}
       >
         {canShowHero && (
-          <CldImage
+          <Image
             src={HERO_IMAGE_SRC}
             alt={t("heroTitle")}
             fill
             sizes="(min-width: 1024px) 640px, 100vw"
             className="object-cover object-bottom"
-            preload={true}
+            priority
             draggable={false}
           />
         )}

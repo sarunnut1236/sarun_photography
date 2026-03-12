@@ -12,7 +12,7 @@ Minimal, bilingual (EN/TH) photography portfolio for a Bangkok-based photographe
 - **React**
 - **Tailwind CSS**
 - **MUI**
-- **Cloudinary** via `next-cloudinary` (`CldImage`)
+- **Cloudinary** as image CDN with `next/image`
 
 ## Requirements
 

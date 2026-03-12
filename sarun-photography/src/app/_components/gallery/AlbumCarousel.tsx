@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import type { TouchEvent } from "react";
-import { CldImage } from "next-cloudinary";
 import { useLanguage } from "../../_providers/language-context";
 import type { PortraitAlbum } from "../../_content/portrait-albums";
 import { isCloudinarySrc, useCloudinary } from "../../_hooks/use-cloudinary";
@@ -132,7 +132,7 @@ export default function AlbumCarousel({
           {variant === "full" && hasMultiple && prevPhoto && showPrev && (
             <div className="pointer-events-none absolute inset-y-8 left-0 hidden w-1/3 md:block">
               <div className="relative h-full w-full opacity-70">
-                <CldImage
+                <Image
                   src={prevImageSrc as string}
                   alt=""
                   fill
@@ -147,7 +147,7 @@ export default function AlbumCarousel({
           {variant === "full" && hasMultiple && nextPhoto && showNext && (
             <div className="pointer-events-none absolute inset-y-8 right-0 hidden w-1/3 md:block">
               <div className="relative h-full w-full opacity-70">
-                <CldImage
+                <Image
                   src={nextImageSrc as string}
                   alt=""
                   fill
@@ -171,7 +171,7 @@ export default function AlbumCarousel({
               role="button"
               aria-label="Next photo"
             >
-              <CldImage
+              <Image
                 key={active.id}
                 src={imageSrc as string}
                 alt={active.alt[language] ?? active.alt.en}
