@@ -7,6 +7,8 @@ import { LanguageProvider } from "./_providers/language-context";
 import { copy } from "./_content/copy";
 import SiteHeader from "./_components/layout/SiteHeader";
 import SiteFooter from "./_components/layout/SiteFooter";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Sarun Photography",
@@ -37,6 +39,8 @@ export default function RootLayout({
           <ColorModeProvider>
             <Suspense fallback={<div className="flex min-h-screen flex-col bg-(--bg)" />}>
               <LanguageProvider copy={copy}>
+                <Analytics />
+                <SpeedInsights />
                 <div className="flex min-h-screen flex-col bg-(--bg) text-(--text-primary)">
                   <SiteHeader />
                   <main className="flex-1">{children}</main>
