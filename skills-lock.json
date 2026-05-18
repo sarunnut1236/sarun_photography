@@ -6,10 +6,46 @@
       "sourceType": "github",
       "computedHash": "948f56ca9ffdef1f71b5333e9a3ffa9b47279a928498f660568648f504b5add8"
     },
+    "canonical-tag": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo/technical/canonical/SKILL.md",
+      "computedHash": "9d6a486de0c30d7940126d74761cdd0fb73943888aed12907868801ecd11ff13"
+    },
     "deploy-to-vercel": {
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
       "computedHash": "3a0481591523c55ecfe2569b6b28b2dcbfa3742367667697219d29170981ad53"
+    },
+    "meta-description": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo/on-page/description/SKILL.md",
+      "computedHash": "6d1c8f2d692108465e75b844e6dfe548966fc08d717d0a4ec6a3c4b5f779f93e"
+    },
+    "parasite-seo": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo/parasite-seo/SKILL.md",
+      "computedHash": "9f029920fdaf7fef5d8b8d9d2e45677eee48a42bd510f219aad0744e88ab428d"
+    },
+    "robots-txt": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo/technical/robots/SKILL.md",
+      "computedHash": "6fe9454c13862590800d4b9ecc3e20e07c48efbb5bfbbab714a8b3b0717b57bf"
+    },
+    "seo-strategy": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "skillPath": "skills/strategies/structure/seo/SKILL.md",
+      "computedHash": "14e44514a9bbdd2efb080b39d6f3b2ea1c35107e2c7570abcda3afd5f5c8e4e4"
+    },
+    "title-tag": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo/on-page/title/SKILL.md",
+      "computedHash": "5f25543cfd056db3c02ebd0fd091244961d312fc3145232356b695633863a84d"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
@@ -25,6 +61,12 @@
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
       "computedHash": "d8e7d3afe37dcc8a97b99ffb5afdb4d0919ae0092ea8b68f44eb201f035e33ac"
+    },
+    "xml-sitemap": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seo/technical/sitemap/SKILL.md",
+      "computedHash": "3d1a9b6d1a718ec84fe4ab95e71344854a711e4267498d8d68ff6a89820b97ee"
     }
   }
 }
