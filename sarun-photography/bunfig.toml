@@ -1,0 +1,6 @@
+# `bun test` uses Bun's runner by default. Point it at a thin wrapper that runs Vitest
+# so component tests get jsdom, mocks, and coverage config from vitest.config.ts.
+# Prefer: bun run test | bun run test:coverage | bun run test:watch
+[test]
+root = "./src/test/bun"
+timeout = 120000

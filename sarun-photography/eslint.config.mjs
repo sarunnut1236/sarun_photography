@@ -11,8 +11,17 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
+    "coverage/**",
+    "bundle.js",
     "next-env.d.ts",
   ]),
+  {
+    files: ["src/app/_providers/**/*.{ts,tsx}"],
+    rules: {
+      // Providers sync client state from URL/storage on mount after hydration.
+      "react-hooks/set-state-in-effect": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;
