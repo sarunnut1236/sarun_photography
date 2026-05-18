@@ -67,6 +67,7 @@ export default function SiteHeader() {
     { path: "/", label: t("navHome") },
     { path: "/portrait", label: t("navPortrait") },
     { path: "/landscape", label: t("navLandscape") },
+    { path: "/hire", label: t("navHire") },
   ].map((link) => ({
     ...link,
     href: buildLocalizedHref(link.path, searchParams, language),

@@ -7,13 +7,12 @@ import { LanguageProvider } from "./_providers/language-context";
 import { copy } from "./_content/copy";
 import SiteHeader from "./_components/layout/SiteHeader";
 import SiteFooter from "./_components/layout/SiteFooter";
+import JsonLd, { photographerJsonLd, websiteJsonLd } from "./_components/seo/JsonLd";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { rootMetadata } from "./_lib/seo";
 
-export const metadata: Metadata = {
-  title: "Sarun Photography",
-  description: "Portrait and landscape photography portfolio based in Bangkok.",
-};
+export const metadata: Metadata = rootMetadata;
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -27,14 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
+    <html lang="en" suppressHydrationWarning>
       <body className="antialiased" suppressHydrationWarning>
+        <JsonLd data={[websiteJsonLd(), photographerJsonLd()]} />
         <MuiThemeProvider>
           <ColorModeProvider>
             <Suspense fallback={<div className="flex min-h-screen flex-col bg-(--bg)" />}>

@@ -68,6 +68,16 @@ vi.mock("next/image", () => ({
   },
 }));
 
+vi.mock("@vercel/analytics", () => ({
+  track: vi.fn(),
+  Analytics: () => null,
+}));
+
+vi.mock("@vercel/analytics/next", () => ({
+  track: vi.fn(),
+  Analytics: () => null,
+}));
+
 vi.mock("next/navigation", () => ({
   usePathname: () => navigationState.pathname,
   useSearchParams: () => new URLSearchParams(navigationState.searchParams),

@@ -5,7 +5,7 @@ import { portraitAlbums } from "../../_content/portrait-albums";
 import AlbumCarousel from "../gallery/AlbumCarousel";
 
 export default function PortraitGallerySection() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="space-y-8">
@@ -14,13 +14,20 @@ export default function PortraitGallerySection() {
       </header>
       <div className="space-y-10">
         {portraitAlbums.map((album) => (
-          <AlbumCarousel
-            key={album.id}
-            album={album}
-            autoplay={true}
-            intervalMs={4000}
-            variant="full"
-          />
+          <article key={album.id} className="space-y-3">
+            <h2 className="text-lg font-semibold md:text-xl">
+              {album.title[language] ?? album.title.en}
+            </h2>
+            <p className="max-w-2xl text-sm leading-relaxed text-(--text-secondary) md:text-base">
+              {album.seoDescription[language] ?? album.seoDescription.en}
+            </p>
+            <AlbumCarousel
+              album={album}
+              autoplay={true}
+              intervalMs={4000}
+              variant="full"
+            />
+          </article>
         ))}
       </div>
     </section>

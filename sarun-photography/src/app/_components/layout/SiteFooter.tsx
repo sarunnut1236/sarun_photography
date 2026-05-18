@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { track } from "@vercel/analytics";
 import { useLanguage } from "../../_providers/language-context";
+import { buildLocalizedHref } from "../../_lib/routing";
 
 export default function SiteFooter() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const searchParams = useSearchParams();
-  const lang = searchParams?.get("lang") === "th" ? "th" : "en";
 
   return (
     <footer className="border-t border-(--border-subtle) bg-(--bg)">
@@ -20,10 +21,19 @@ export default function SiteFooter() {
             <br />
             {t("footerRateFullDay")}
           </p>
+          <p className="pt-2">
+            <Link
+              href={buildLocalizedHref("/hire", searchParams, language)}
+              className="text-(--text-secondary) underline underline-offset-4 hover:text-(--text-primary)"
+            >
+              {t("navHire")}
+            </Link>
+          </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <a
               href="mailto:sarunlapsuk@gmail.com"
               aria-label={t("footerEmailCta")}
+              onClick={() => track("footer_email_click")}
               className="inline-flex items-center justify-center rounded-full border border-(--border-subtle) px-4 py-1.5 text-xs md:text-sm text-(--text-secondary) transition-colors hover:bg-(--border-subtle) hover:text-(--text-primary)"
             >
               {t("footerEmailCta")}
@@ -33,6 +43,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("footerLineCta")}
+              onClick={() => track("footer_line_click")}
               className="inline-flex items-center justify-center rounded-full border border-(--border-subtle) px-4 py-1.5 text-xs md:text-sm text-(--text-secondary) transition-colors hover:bg-(--border-subtle) hover:text-(--text-primary)"
             >
               {t("footerLineCta")}

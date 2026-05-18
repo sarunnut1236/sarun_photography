@@ -42,6 +42,12 @@ export function LanguageProvider({
   );
 
   useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = language;
+    }
+  }, [language]);
+
+  useEffect(() => {
     if (!searchParams) return;
 
     const langParam = searchParams.get("lang");

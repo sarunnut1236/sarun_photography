@@ -14,6 +14,7 @@ export type Photo = {
 export type PortraitAlbum = {
   id: string;
   title: LocalizedString;
+  seoDescription: LocalizedString;
   photos: Photo[];
 };
 
@@ -21,6 +22,10 @@ export const portraitAlbums: PortraitAlbum[] = [
   {
     id: "ferntam",
     title: { en: "City wander", th: "เที่ยวในเมือง" },
+    seoDescription: {
+      en: "Bangkok street portrait session — casual city walks with natural light and relaxed poses.",
+      th: "พอร์ตเทรตเดินเที่ยวในเมืองกรุงเทพฯ แสงธรรมชาติ โพสสบาย ๆ",
+    },
     photos: [
       {
         id: "ferntam1",
@@ -138,6 +143,10 @@ export const portraitAlbums: PortraitAlbum[] = [
   {
     id: "aing",
     title: { en: "University shots", th: "ถ่ายรูปเล่นในมหาลัย" },
+    seoDescription: {
+      en: "Casual university portrait walks around Bangkok campuses, including Chulalongkorn University.",
+      th: "ถ่ายรูปเล่นในมหาลัยกรุงเทพฯ บรรยากาศสบาย ๆ รวมถึงแถวจุฬาฯ",
+    },
     photos: [
       {
         id: "aing1",
@@ -180,6 +189,10 @@ export const portraitAlbums: PortraitAlbum[] = [
   {
     id: "nam",
     title: { en: "Graduation photoshoot", th: "ถ่ายรูปรับปริญญา" },
+    seoDescription: {
+      en: "Bangkok graduation portraits in academic gown — formal poses and candid moments on campus.",
+      th: "ถ่ายรูปรับปริญญาในกรุงเทพฯ ชุดครุย ทั้งท่าทางมาตรฐานและโมเมนต์ธรรมชาติ",
+    },
     photos: [
       {
         id: "nam4",

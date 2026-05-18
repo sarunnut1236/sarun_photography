@@ -12,6 +12,7 @@ describe("SiteHeader", () => {
     expect(screen.getByRole("link", { name: "Home" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Portrait" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Landscape" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Hire me" })).toBeInTheDocument();
   });
 
   it("includes lang query in localized nav links", () => {
