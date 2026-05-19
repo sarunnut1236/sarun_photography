@@ -40,7 +40,7 @@ describe("SiteHeader", () => {
     const user = userEvent.setup();
     renderWithProviders(<SiteHeader />, { withColorMode: true });
 
-    const toggle = screen.getByRole("button", { name: "Switch to dark mode" });
+    const toggle = await screen.findByRole("button", { name: "Switch to dark mode" });
     await user.click(toggle);
 
     expect(screen.getByRole("button", { name: "Switch to light mode" })).toBeInTheDocument();

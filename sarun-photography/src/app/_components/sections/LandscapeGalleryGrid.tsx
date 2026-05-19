@@ -1,15 +1,11 @@
 "use client";
 
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { useLanguage } from "../../_providers/language-context";
 import { landscapePhotos } from "../../_content/landscape-photos";
-import { buildLocalizedHref } from "../../_lib/routing";
 import PhotoTile from "../gallery/PhotoTile";
 
 export default function LandscapeGalleryGrid() {
   const { t, language } = useLanguage();
-  const searchParams = useSearchParams();
 
   const themesInOrder = [
     "cityscape",
@@ -41,18 +37,10 @@ export default function LandscapeGalleryGrid() {
 
   return (
     <section className="space-y-10">
-      <header className="space-y-3">
+      <header className="space-y-2">
         <h1 className="text-xl font-semibold md:text-2xl">{t("landscapesSectionTitle")}</h1>
         <p className="max-w-2xl text-sm leading-relaxed text-(--text-secondary) md:text-base">
           {t("landscapeIntro")}
-        </p>
-        <p>
-          <Link
-            href={buildLocalizedHref("/hire", searchParams, language)}
-            className="text-sm text-(--text-secondary) underline underline-offset-4 hover:text-(--text-primary)"
-          >
-            {t("landscapeBookPortrait")}
-          </Link>
         </p>
       </header>
       <div className="space-y-8">

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { track } from "@vercel/analytics";
+import { hireFaqItems } from "../../_content/hire-faq";
 import { useLanguage } from "../../_providers/language-context";
 import { buildLocalizedHref } from "../../_lib/routing";
 
@@ -74,16 +75,12 @@ export default function HireSection() {
       <section className="space-y-4">
         <h2 className="text-lg font-semibold">{t("hireFaqTitle")}</h2>
         <dl className="space-y-4">
-          {(
-            [
-              ["hireFaq1Q", "hireFaq1A"],
-              ["hireFaq2Q", "hireFaq2A"],
-              ["hireFaq3Q", "hireFaq3A"],
-            ] as const
-          ).map(([q, a]) => (
-            <div key={q}>
-              <dt className="font-medium text-(--text-primary)">{t(q)}</dt>
-              <dd className="mt-1 text-sm text-(--text-secondary) md:text-base">{t(a)}</dd>
+          {hireFaqItems.map((item) => (
+            <div key={item.id}>
+              <dt className="font-medium text-(--text-primary)">{item.question[language]}</dt>
+              <dd className="mt-1 text-sm text-(--text-secondary) md:text-base">
+                {item.answer[language]}
+              </dd>
             </div>
           ))}
         </dl>

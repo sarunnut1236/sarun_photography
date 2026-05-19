@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
+import DarkModeToggle from "./DarkModeToggle";
 import { useLanguage } from "../../_providers/language-context";
-import { useColorMode } from "../../_providers/color-mode-context";
 import { buildLocalizedHref } from "../../_lib/routing";
 
 function NavLink({ href, label, isActive }: { href: string; label: string; isActive: boolean }) {
@@ -43,21 +43,6 @@ function LanguageSwitcher() {
   );
 }
 
-function DarkModeToggle() {
-  const { mode, toggleMode } = useColorMode();
-
-  return (
-    <button
-      type="button"
-      onClick={toggleMode}
-      aria-label={mode === "light" ? "Switch to dark mode" : "Switch to light mode"}
-      className="ml-2 inline-flex h-8 w-8 items-center justify-center rounded-full border border-(--border-subtle) text-xs md:text-sm transition-colors hover:bg-(--border-subtle)"
-    >
-      {mode === "light" ? "☾" : "☀︎"}
-    </button>
-  );
-}
-
 export default function SiteHeader() {
   const { t, language } = useLanguage();
   const pathname = usePathname();
@@ -75,24 +60,33 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-30 border-b border-(--border-subtle) bg-(--bg)/95 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-3 sm:flex-row sm:items-center sm:justify-between">
-        <Link href={buildLocalizedHref("/", searchParams, language)}>
-          <span className="text-sm font-semibold tracking-tight md:text-lg">{t("siteTitle")}</span>
-        </Link>
-        <nav className="flex w-full flex-wrap items-center gap-3 sm:w-auto sm:justify-end md:gap-4">
-          <div className="flex flex-wrap items-center gap-3">
-            {links.map((link) => (
-              <NavLink
-                key={link.path}
-                href={link.href}
-                label={link.label}
-                isActive={pathname === link.path}
-              />
-            ))}
+      <div className="@container/header mx-auto max-w-5xl px-6 py-3">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <Link href={buildLocalizedHref("/", searchParams, language)} className="shrink-0">
+            <span className="text-sm font-semibold tracking-tight md:text-lg">{t("siteTitle")}</span>
+          </Link>
+
+          <div className="flex min-w-0 flex-1 flex-wrap items-center justify-end gap-x-4 gap-y-2 md:gap-x-5">
+            <nav
+              aria-label="Main"
+              className="flex flex-wrap items-center gap-x-4 gap-y-1 md:gap-x-5"
+            >
+              {links.map((link) => (
+                <NavLink
+                  key={link.path}
+                  href={link.href}
+                  label={link.label}
+                  isActive={pathname === link.path}
+                />
+              ))}
+            </nav>
+
+            <div className="ml-auto flex basis-full items-center justify-end gap-2 @[34rem]/header:basis-auto">
+              <LanguageSwitcher />
+              <DarkModeToggle />
+            </div>
           </div>
-          <LanguageSwitcher />
-          <DarkModeToggle />
-        </nav>
+        </div>
       </div>
     </header>
   );

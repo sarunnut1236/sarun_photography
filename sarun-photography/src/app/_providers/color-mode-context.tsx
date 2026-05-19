@@ -1,6 +1,7 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useState } from "react";
+import { COLOR_MODE_STORAGE_KEY } from "../_lib/color-mode";
 
 type ColorMode = "light" | "dark";
 
@@ -11,20 +12,26 @@ interface ColorModeContextValue {
 
 const ColorModeContext = createContext<ColorModeContextValue | null>(null);
 
-const COLOR_MODE_STORAGE_KEY = "sarun-color-mode";
+function readStoredColorMode(): ColorMode {
+  if (typeof window === "undefined") return "light";
+
+  const stored = window.localStorage.getItem(COLOR_MODE_STORAGE_KEY);
+  if (stored === "light" || stored === "dark") return stored;
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) return "dark";
+  return "light";
+}
+
+function readDomColorMode(): ColorMode {
+  if (typeof document === "undefined") return "light";
+  return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+}
 
 export function ColorModeProvider({ children }: { children: React.ReactNode }) {
   const [mode, setMode] = useState<ColorMode>("light");
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const stored = window.localStorage.getItem(COLOR_MODE_STORAGE_KEY);
-      if (stored === "light" || stored === "dark") {
-        setMode(stored);
-      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        setMode("dark");
-      }
-    }
+  // Sync with inline script in layout <head> (runs before React).
+  useLayoutEffect(() => {
+    setMode(readDomColorMode());
   }, []);
 
   useEffect(() => {

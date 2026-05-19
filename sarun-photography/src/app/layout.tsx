@@ -10,6 +10,7 @@ import SiteFooter from "./_components/layout/SiteFooter";
 import JsonLd, { photographerJsonLd, websiteJsonLd } from "./_components/seo/JsonLd";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import ColorModeInitScript from "./_components/theme/ColorModeInitScript";
 import { rootMetadata } from "./_lib/seo";
 
 export const metadata: Metadata = rootMetadata;
@@ -27,11 +28,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <ColorModeInitScript />
+      </head>
       <body className="antialiased" suppressHydrationWarning>
         <JsonLd data={[websiteJsonLd(), photographerJsonLd()]} />
         <MuiThemeProvider>
-          <ColorModeProvider>
-            <Suspense fallback={<div className="flex min-h-screen flex-col bg-(--bg)" />}>
+          <Suspense fallback={<div className="flex min-h-screen flex-col bg-(--bg)" />}>
+            <ColorModeProvider>
               <LanguageProvider copy={copy}>
                 <Analytics />
                 <SpeedInsights />
@@ -41,8 +45,8 @@ export default function RootLayout({
                   <SiteFooter />
                 </div>
               </LanguageProvider>
-            </Suspense>
-          </ColorModeProvider>
+            </ColorModeProvider>
+          </Suspense>
         </MuiThemeProvider>
       </body>
     </html>

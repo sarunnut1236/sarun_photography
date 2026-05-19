@@ -99,9 +99,13 @@ export const copy = {
     en: "Instagram",
     th: "อินสตาแกรม",
   },
-  homeIntroTitle: {
-    en: "Portrait photographer in Bangkok",
-    th: "ช่างภาพบุคคลในกรุงเทพฯ",
+  homeGearTitle: {
+    en: "Gear I shoot with",
+    th: "อุปกรณ์ที่ใช้ถ่าย",
+  },
+  homeGearIntro: {
+    en: "A simple Nikon setup — body and a few lenses for portraits and everyday work.",
+    th: "เซ็ต Nikon เรียบง่าย — ตัวกล้องกับเลนส์ไม่กี่ตัวสำหรับพอร์ตเทรตและงานทั่วไป",
   },
   homeIntroBody: {
     en: "I shoot graduation, university, and lifestyle portraits around Bangkok. Sessions start at 1,500 THB for a half day.",
@@ -167,36 +171,8 @@ export const copy = {
     en: "FAQ",
     th: "คำถามที่พบบ่อย",
   },
-  hireFaq1Q: {
-    en: "Do you shoot graduation at universities in Bangkok?",
-    th: "รับถ่ายรูปรับปริญญาในกรุงเทพฯ ไหม?",
-  },
-  hireFaq1A: {
-    en: "Yes — graduation and campus sessions are available. Share your date and university so we can plan locations.",
-    th: "รับครับ — ทั้งรับปริญญาและในมหาลัย บอกวันที่กับมหาลัยมาได้เลย จะช่วยวางโลเคชัน",
-  },
-  hireFaq2Q: {
-    en: "How far in advance should I book?",
-    th: "ควรจองล่วงหน้ากี่วัน?",
-  },
-  hireFaq2A: {
-    en: "1–2 weeks is ideal for graduation season. Weekday lifestyle shoots can sometimes be arranged sooner.",
-    th: "ช่วงรับปริญญาแนะนำ 1–2 สัปดาห์ งานไลฟ์สไตล์วันธรรมดาอาจจัดได้เร็วกว่านั้น",
-  },
-  hireFaq3Q: {
-    en: "Indoor or outdoor?",
-    th: "ถ่ายในร่มหรือกลางแจ้ง?",
-  },
-  hireFaq3A: {
-    en: "Both work. We pick spots based on your style, weather, and whether you need formal graduation portraits.",
-    th: "ได้ทั้งสองแบบ เลือกตามสไตล์ อากาศ และว่าเป็นชุดรับปริญญาหรือไม่",
-  },
   landscapeIntro: {
-    en: "Landscape and architecture work across Thailand. For commissioned landscape shoots, get in touch by email or LINE.",
-    th: "ผลงานภาพแลนด์สเคปและสถาปัตยกรรมทั่วไทย หากสนใจงานภาพทิวทัศน์แบบจัดจ้าง ติดต่อทางอีเมลหรือ LINE ได้",
-  },
-  landscapeBookPortrait: {
-    en: "Book a portrait session",
-    th: "จองถ่ายภาพบุคคล",
+    en: "Places I keep going back to — city edges, quiet temples, trails, and skies. This is the personal side of my photography, shot for the love of light and landscape.",
+    th: "ที่ที่ผมชอบกลับไปซ้ำ ๆ — ขอบเมือง วัดเงียบ ๆ เส้นทางเดิน และท้องฟ้า นี่คือด้านส่วนตัวของการถ่ายภาพ ทำเพราะรักแสงและภาพทิวทัศน์",
   },
 } as const;
