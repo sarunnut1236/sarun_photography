@@ -12,15 +12,6 @@ interface ColorModeContextValue {
 
 const ColorModeContext = createContext<ColorModeContextValue | null>(null);
 
-function readStoredColorMode(): ColorMode {
-  if (typeof window === "undefined") return "light";
-
-  const stored = window.localStorage.getItem(COLOR_MODE_STORAGE_KEY);
-  if (stored === "light" || stored === "dark") return stored;
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) return "dark";
-  return "light";
-}
-
 function readDomColorMode(): ColorMode {
   if (typeof document === "undefined") return "light";
   return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
@@ -29,7 +20,6 @@ function readDomColorMode(): ColorMode {
 export function ColorModeProvider({ children }: { children: React.ReactNode }) {
   const [mode, setMode] = useState<ColorMode>("light");
 
-  // Sync with inline script in layout <head> (runs before React).
   useLayoutEffect(() => {
     setMode(readDomColorMode());
   }, []);

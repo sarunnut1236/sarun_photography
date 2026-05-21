@@ -69,7 +69,7 @@ export default function SiteHeader() {
           <div className="flex min-w-0 flex-1 flex-wrap items-center justify-end gap-x-4 gap-y-2 md:gap-x-5">
             <nav
               aria-label="Main"
-              className="flex flex-wrap items-center gap-x-4 gap-y-1 md:gap-x-5"
+              className="flex w-full flex-wrap items-center justify-end gap-x-4 gap-y-1 @[34rem]/header:w-auto md:gap-x-5"
             >
               {links.map((link) => (
                 <NavLink

@@ -2,36 +2,16 @@
 
 import { useLanguage } from "../../_providers/language-context";
 import { landscapePhotos } from "../../_content/landscape-photos";
+import { landscapeThemes } from "../../_content/landscape-themes";
 import PhotoTile from "../gallery/PhotoTile";
 
 export default function LandscapeGalleryGrid() {
   const { t, language } = useLanguage();
 
-  const themesInOrder = [
-    "cityscape",
-    "landscape",
-    "nature",
-    "star",
-    "sky",
-    "architecture",
-    "minimalism",
-  ] as const;
-
-  const themeLabels: Record<(typeof themesInOrder)[number], string> = {
-    cityscape: t("landscapeThemeCityscape"),
-    minimalism: t("landscapeThemeMinimalism"),
-    nature: t("landscapeThemeNature"),
-    architecture: t("landscapeThemeArchitecture"),
-    star: t("landscapeThemeStar"),
-    landscape: t("landscapeThemeLandscape"),
-    sky: t("landscapeThemeSky"),
-  };
-
-  const photosByTheme = themesInOrder
+  const photosByTheme = landscapeThemes
     .map((theme) => ({
       theme,
-      label: themeLabels[theme],
-      photos: landscapePhotos.filter((photo) => photo.theme === theme),
+      photos: landscapePhotos.filter((photo) => photo.theme === theme.id),
     }))
     .filter((group) => group.photos.length > 0);
 
@@ -44,11 +24,16 @@ export default function LandscapeGalleryGrid() {
         </p>
       </header>
       <div className="space-y-8">
-        {photosByTheme.map((group) => (
-          <section key={group.theme} className="space-y-3" id={group.theme}>
-            <h2 className="text-lg font-semibold md:text-xl">{group.label}</h2>
+        {photosByTheme.map(({ theme, photos }) => (
+          <section key={theme.id} className="space-y-3" id={theme.id}>
+            <h2 className="text-lg font-semibold md:text-xl">
+              {theme.title[language] ?? theme.title.en}
+            </h2>
+            <p className="max-w-2xl text-sm leading-relaxed text-(--text-secondary) md:text-base">
+              {theme.description[language] ?? theme.description.en}
+            </p>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {group.photos.map((photo) => (
+              {photos.map((photo) => (
                 <PhotoTile
                   key={photo.id}
                   src={photo.cloudinaryId ?? photo.src}

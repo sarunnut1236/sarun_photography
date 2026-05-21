@@ -1,3 +1,5 @@
+import { settings } from "../_lib/settings";
+
 const DEFAULT_OG_IMAGE =
   "https://res.cloudinary.com/dkjleico2/image/upload/v1773089164/IMG_5668_p1cuxr.jpg";
 
@@ -6,6 +8,8 @@ const PORTRAIT_OG_IMAGE =
 
 const LANDSCAPE_OG_IMAGE =
   "https://res.cloudinary.com/dkjleico2/image/upload/v1773085424/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C_%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88_kqmb44.png";
+
+const { halfDayThb } = settings.rates;
 
 type LocalizedSeo = {
   title: { en: string; th: string };
@@ -20,8 +24,8 @@ export const seoPages = {
       th: "ช่างภาพบุคคล กรุงเทพ",
     },
     description: {
-      en: "Portrait sessions in Bangkok from 1,500 THB. Graduation, university, and lifestyle photography by Sarun Photography.",
-      th: "รับถ่ายภาพบุคคลในกรุงเทพฯ เริ่ม 1,500 บาท ถ่ายรับปริญญา มหาวิทยาลัย และภาพไลฟ์สไตล์ โดย Sarun Photography",
+      en: `Portrait sessions in Bangkok from ${halfDayThb} THB. Graduation, university, and lifestyle photography by Sarun Photography.`,
+      th: `รับถ่ายภาพบุคคลในกรุงเทพฯ เริ่ม ${halfDayThb} บาท ถ่ายรับปริญญา มหาวิทยาลัย และภาพไลฟ์สไตล์ โดย Sarun Photography`,
     },
     ogImage: DEFAULT_OG_IMAGE,
   },
@@ -53,8 +57,8 @@ export const seoPages = {
       th: "จองถ่ายภาพบุคคล",
     },
     description: {
-      en: "Bangkok portrait packages from 1,500 THB half day. Graduation and lifestyle sessions. Book via LINE or email.",
-      th: "แพ็กเกจถ่ายภาพบุคคลกรุงเทพฯ ครึ่งวัน 1,500 บาท รับปริญญาและไลฟ์สไตล์ จองผ่าน LINE หรืออีเมล",
+      en: `Bangkok portrait packages from ${halfDayThb} THB half day. Graduation and lifestyle sessions. Book via LINE or email.`,
+      th: `แพ็กเกจถ่ายภาพบุคคลกรุงเทพฯ ครึ่งวัน ${halfDayThb} บาท รับปริญญาและไลฟ์สไตล์ จองผ่าน LINE หรืออีเมล`,
     },
     ogImage: PORTRAIT_OG_IMAGE,
   },

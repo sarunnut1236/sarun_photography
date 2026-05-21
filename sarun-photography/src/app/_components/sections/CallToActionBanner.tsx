@@ -3,17 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { HOME_CTA_IMAGE_SRC } from "../../_content/cdn-images";
 import { useCloudinary, isCloudinarySrc } from "../../_hooks/use-cloudinary";
 import { useLanguage } from "../../_providers/language-context";
 import { buildLocalizedHref } from "../../_lib/routing";
+
+const CTA_IMAGE_SRC =
+  "https://res.cloudinary.com/dkjleico2/image/upload/v1779205103/IMG_5567_d8osr8.jpg";
 
 export default function CallToActionBanner() {
   const { t, language } = useLanguage();
   const searchParams = useSearchParams();
   const headline = t("homeCtaHeadline");
   const { isEnabled } = useCloudinary();
-  const canShowImage = isEnabled && isCloudinarySrc(HOME_CTA_IMAGE_SRC);
+  const canShowImage = isEnabled && isCloudinarySrc(CTA_IMAGE_SRC);
 
   return (
     <section className="animate-slide-up">
@@ -25,7 +27,7 @@ export default function CallToActionBanner() {
         >
           {canShowImage && (
             <Image
-              src={HOME_CTA_IMAGE_SRC}
+              src={CTA_IMAGE_SRC}
               alt={headline}
               fill
               sizes="(min-width: 768px) 480px, 100vw"

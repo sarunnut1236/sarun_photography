@@ -1,3 +1,7 @@
+import { settings } from "../_lib/settings";
+
+const { halfDayThb, fullDayThb } = settings.rates;
+
 export const copy = {
   siteTitle: {
     en: "Sarun Photography",
@@ -43,34 +47,6 @@ export const copy = {
     en: "Find more landscapes",
     th: "ดูภาพภูมิทัศน์เพิ่มเติม",
   },
-  landscapeThemeCityscape: {
-    en: "Cityscape",
-    th: "ภาพซิตี้สเคป",
-  },
-  landscapeThemeMinimalism: {
-    en: "Minimalism",
-    th: "ภาพมินิมอล",
-  },
-  landscapeThemeNature: {
-    en: "Nature",
-    th: "ภาพธรรมชาติ",
-  },
-  landscapeThemeArchitecture: {
-    en: "Architecture",
-    th: "ภาพสถาปัตยกรรม",
-  },
-  landscapeThemeStar: {
-    en: "Stars",
-    th: "ภาพดาว",
-  },
-  landscapeThemeLandscape: {
-    en: "Landscape",
-    th: "ภาพแลนด์สเคป",
-  },
-  landscapeThemeSky: {
-    en: "Sky",
-    th: "ภาพท้องฟ้า",
-  },
   footerLocation: {
     en: "Based in Bangkok, Thailand",
     th: "รับงานที่กรุงเทพฯเป็นหลัก",
@@ -80,12 +56,12 @@ export const copy = {
     th: "รับถ่ายภาพบุคคลตามนัดหมาย",
   },
   footerRateHalfDay: {
-    en: "Half day 1,500 THB",
-    th: "ครึ่งวัน 1500 บาท",
+    en: `Half day ${halfDayThb} THB`,
+    th: `ครึ่งวัน ${halfDayThb} บาท`,
   },
   footerRateFullDay: {
-    en: "Full day 2,000 THB",
-    th: "เต็มวัน 2000 บาท",
+    en: `Full day ${fullDayThb} THB`,
+    th: `เต็มวัน ${fullDayThb} บาท`,
   },
   footerEmailCta: {
     en: "Email",
@@ -108,8 +84,8 @@ export const copy = {
     th: "เซ็ต Nikon เรียบง่าย — ตัวกล้องกับเลนส์ไม่กี่ตัวสำหรับพอร์ตเทรตและงานทั่วไป",
   },
   homeIntroBody: {
-    en: "I shoot graduation, university, and lifestyle portraits around Bangkok. Sessions start at 1,500 THB for a half day.",
-    th: "รับถ่ายรูปรับปริญญา มหาวิทยาลัย และไลฟ์สไตล์ในกรุงเทพฯ เริ่มต้นครึ่งวัน 1,500 บาท",
+    en: `I shoot graduation, university, and lifestyle portraits around Bangkok. Sessions start at ${halfDayThb} THB for a half day.`,
+    th: `รับถ่ายรูปรับปริญญา มหาวิทยาลัย และไลฟ์สไตล์ในกรุงเทพฯ เริ่มต้นครึ่งวัน ${halfDayThb} บาท`,
   },
   homeIntroCta: {
     en: "Book a session",
@@ -171,8 +147,38 @@ export const copy = {
     en: "FAQ",
     th: "คำถามที่พบบ่อย",
   },
+  hireFaq1Q: {
+    en: "Do you shoot graduation at universities in Bangkok?",
+    th: "รับถ่ายรูปรับปริญญาในกรุงเทพฯ ไหม?",
+  },
+  hireFaq1A: {
+    en: "Yes — graduation and campus sessions are available. Share your date and university so we can plan locations.",
+    th: "รับครับ — ทั้งรับปริญญาและในมหาลัย บอกวันที่กับมหาลัยมาได้เลย จะช่วยวางโลเคชัน",
+  },
+  hireFaq2Q: {
+    en: "How far in advance should I book?",
+    th: "ควรจองล่วงหน้ากี่วัน?",
+  },
+  hireFaq2A: {
+    en: "1–2 weeks is ideal for graduation season. Weekday lifestyle shoots can sometimes be arranged sooner.",
+    th: "ช่วงรับปริญญาแนะนำ 1–2 สัปดาห์ งานไลฟ์สไตล์วันธรรมดาอาจจัดได้เร็วกว่านั้น",
+  },
+  hireFaq3Q: {
+    en: "Indoor or outdoor?",
+    th: "ถ่ายในร่มหรือกลางแจ้ง?",
+  },
+  hireFaq3A: {
+    en: "Both work. We pick spots based on your style, weather, and whether you need formal graduation portraits.",
+    th: "ได้ทั้งสองแบบ เลือกตามสไตล์ อากาศ และว่าเป็นชุดรับปริญญาหรือไม่",
+  },
   landscapeIntro: {
     en: "Places I keep going back to — city edges, quiet temples, trails, and skies. This is the personal side of my photography, shot for the love of light and landscape.",
     th: "ที่ที่ผมชอบกลับไปซ้ำ ๆ — ขอบเมือง วัดเงียบ ๆ เส้นทางเดิน และท้องฟ้า นี่คือด้านส่วนตัวของการถ่ายภาพ ทำเพราะรักแสงและภาพทิวทัศน์",
   },
 } as const;
+
+export const hireFaqOrder = [
+  ["hireFaq1Q", "hireFaq1A"],
+  ["hireFaq2Q", "hireFaq2A"],
+  ["hireFaq3Q", "hireFaq3A"],
+] as const;

@@ -9,8 +9,8 @@ describe("SiteFooter", () => {
 
     expect(screen.getByText("Based in Bangkok, Thailand")).toBeInTheDocument();
     expect(screen.getByText("Available for portrait sessions")).toBeInTheDocument();
-    expect(screen.getByText(/Half day 1,500 THB/)).toBeInTheDocument();
-    expect(screen.getByText(/Full day 2,000 THB/)).toBeInTheDocument();
+    expect(screen.getByText(/Half day 1500 THB/)).toBeInTheDocument();
+    expect(screen.getByText(/Full day 2000 THB/)).toBeInTheDocument();
   });
 
   it("links to email and LINE with correct hrefs", () => {
