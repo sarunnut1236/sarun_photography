@@ -1,10 +1,11 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import { gearItems } from "../../_content/gear";
-import { useLanguage } from "../../_providers/language-context";
 
 export default function HomeIntroSection() {
-  const { t, language } = useLanguage();
+  const t = useTranslations();
+  const locale = useLocale() as "en" | "th";
 
   return (
     <section className="rounded-2xl border border-(--border-subtle) bg-(--bg) p-6 md:p-8">
@@ -15,8 +16,8 @@ export default function HomeIntroSection() {
       <ul className="mt-5 space-y-3">
         {gearItems.map((item) => (
           <li key={item.id} className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-3">
-            <span className="font-medium text-(--text-primary)">{item.name[language]}</span>
-            <span className="text-sm text-(--text-secondary)">{item.detail[language]}</span>
+            <span className="font-medium text-(--text-primary)">{item.name[locale]}</span>
+            <span className="text-sm text-(--text-secondary)">{item.detail[locale]}</span>
           </li>
         ))}
       </ul>

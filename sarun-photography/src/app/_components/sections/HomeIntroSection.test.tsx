@@ -9,8 +9,8 @@ describe("HomeIntroSection", () => {
 
     expect(screen.getByRole("heading", { name: "Gear I shoot with" })).toBeInTheDocument();
     expect(screen.getByText("Nikon D5600")).toBeInTheDocument();
-    expect(screen.getByText("35mm lens")).toBeInTheDocument();
-    expect(screen.getByText("Kit lens")).toBeInTheDocument();
-    expect(screen.getByText("Telephoto lens")).toBeInTheDocument();
+    expect(screen.getByText("18-55mm f/3.5-5.6")).toBeInTheDocument();
+    expect(screen.getByText("35mm f/1.8")).toBeInTheDocument();
+    expect(screen.getByText("70-300mm f/4-5.6")).toBeInTheDocument();
   });
 });

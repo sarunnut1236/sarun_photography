@@ -7,8 +7,15 @@ describe("CallToActionBanner", () => {
   it("renders CTA headline and link to hire page", () => {
     renderWithProviders(<CallToActionBanner />);
 
-    expect(screen.getByRole("heading", { name: "If you like them, hire me plsss" })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Book a session" })).toHaveAttribute("href", "/hire?lang=en");
-    expect(screen.getByRole("img", { name: "If you like them, hire me plsss" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "If you like my style, hire me plsss 🥺" }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Book a session now" })).toHaveAttribute(
+      "href",
+      "/en/hire",
+    );
+    expect(
+      screen.getByRole("img", { name: "If you like my style, hire me plsss 🥺" }),
+    ).toBeInTheDocument();
   });
 });

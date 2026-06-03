@@ -49,13 +49,11 @@ if (typeof DragEvent === "undefined") {
 afterEach(() => {
   cleanup();
   localStorageMock.clear();
+  document.documentElement.removeAttribute("data-theme");
   navigationState.pathname = "/";
-  navigationState.searchParams = "lang=en";
+  navigationState.locale = "en";
+  navigationState.push.mockClear();
   navigationState.replace.mockClear();
-  navigationState.replace.mockImplementation((url: string) => {
-    const queryIndex = url.indexOf("?");
-    navigationState.searchParams = queryIndex >= 0 ? url.slice(queryIndex + 1) : "";
-  });
 });
 
 vi.mock("next/image", () => ({
@@ -80,9 +78,32 @@ vi.mock("@vercel/analytics/next", () => ({
 
 vi.mock("next/navigation", () => ({
   usePathname: () => navigationState.pathname,
-  useSearchParams: () => new URLSearchParams(navigationState.searchParams),
+  useSearchParams: () => new URLSearchParams(),
   useRouter: () => ({
     replace: navigationState.replace,
-    push: vi.fn(),
+    push: navigationState.push,
+  }),
+}));
+
+vi.mock("@/i18n/navigation", () => ({
+  Link: ({
+    href,
+    locale,
+    children,
+    ...rest
+  }: {
+    href: string;
+    locale?: "en" | "th";
+    children: React.ReactNode;
+  } & Record<string, unknown>) => {
+    const isInternal = href.startsWith("/");
+    const loc = locale ?? navigationState.locale;
+    const computed = isInternal ? (href === "/" ? `/${loc}` : `/${loc}${href}`) : href;
+    return React.createElement("a", { href: computed, ...rest }, children);
+  },
+  usePathname: () => navigationState.pathname,
+  useRouter: () => ({
+    replace: navigationState.replace,
+    push: navigationState.push,
   }),
 }));

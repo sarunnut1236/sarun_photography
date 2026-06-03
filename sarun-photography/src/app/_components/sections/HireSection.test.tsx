@@ -8,13 +8,13 @@ describe("HireSection", () => {
     renderWithProviders(<HireSection />, { pathname: "/hire" });
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "Book a portrait session in Bangkok" }),
+      screen.getByRole("heading", { level: 1, name: "Book a portrait session" }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Half day" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Full day" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Value pack" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Full pack" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "View portrait portfolio" })).toHaveAttribute(
       "href",
-      "/portrait?lang=en",
+      "/en/portrait",
     );
     expect(screen.getByRole("link", { name: "Email" })).toHaveAttribute(
       "href",

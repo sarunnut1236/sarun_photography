@@ -21,14 +21,17 @@ export function resolveLanguage(lang: string | undefined): SiteLanguage {
   return lang === "th" ? "th" : "en";
 }
 
-export function localizedUrl(path: string, lang: SiteLanguage): string {
-  const url = new URL(path, SITE_URL);
-  url.searchParams.set("lang", lang);
-  return url.toString();
+export function localizedPath(path: string, lang: SiteLanguage): string {
+  const suffix = path === "/" ? "" : path;
+  return `/${lang}${suffix}`;
 }
 
-export function canonicalUrl(path: string): string {
-  return new URL(path, SITE_URL).toString();
+export function localizedUrl(path: string, lang: SiteLanguage): string {
+  return new URL(localizedPath(path, lang), SITE_URL).toString();
+}
+
+export function canonicalUrl(path: string, lang: SiteLanguage): string {
+  return localizedUrl(path, lang);
 }
 
 export function languageAlternates(path: string): Record<string, string> {
@@ -64,7 +67,7 @@ export function buildPageMetadata(
     title: pageKey === "home" ? { absolute: title } : title,
     description,
     alternates: {
-      canonical: canonicalUrl(path),
+      canonical: canonicalUrl(path, lang),
       languages: languageAlternates(path),
     },
     openGraph: {
@@ -111,9 +114,5 @@ export const rootMetadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: [DEFAULT_OG_IMAGE],
-  },
-  icons: {
-    icon: DEFAULT_OG_IMAGE,
-    apple: DEFAULT_OG_IMAGE,
   },
 };

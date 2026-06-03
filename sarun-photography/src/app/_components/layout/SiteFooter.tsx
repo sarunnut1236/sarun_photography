@@ -1,14 +1,14 @@
 "use client";
 
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { track } from "@vercel/analytics";
-import { useLanguage } from "../../_providers/language-context";
-import { buildLocalizedHref } from "../../_lib/routing";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { settings } from "../../_lib/settings";
+
+const { halfDayThb, fullDayThb } = settings.rates;
 
 export default function SiteFooter() {
-  const { t, language } = useLanguage();
-  const searchParams = useSearchParams();
+  const t = useTranslations();
 
   return (
     <footer className="border-t border-(--border-subtle) bg-(--bg)">
@@ -17,13 +17,13 @@ export default function SiteFooter() {
           <p className="text-(--text-primary)">{t("footerLocation")}</p>
           <p className="text-(--text-secondary)">{t("footerAvailability")}</p>
           <p className="text-(--text-primary) font-medium">
-            {t("footerRateHalfDay")}
+            {t("footerRateHalfDay", { halfDayThb })}
             <br />
-            {t("footerRateFullDay")}
+            {t("footerRateFullDay", { fullDayThb })}
           </p>
           <p className="pt-2">
             <Link
-              href={buildLocalizedHref("/hire", searchParams, language)}
+              href="/hire"
               className="text-(--text-secondary) underline underline-offset-4 hover:text-(--text-primary)"
             >
               {t("navHire")}

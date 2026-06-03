@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { track } from "@vercel/analytics";
-import { useLanguage } from "../../_providers/language-context";
-import { buildLocalizedHref } from "../../_lib/routing";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { settings } from "../../_lib/settings";
+
+const { halfDayThb, fullDayThb } = settings.rates;
 
 const hireFaqOrder = [
   ["hireFaq1Q", "hireFaq1A"],
@@ -13,8 +14,7 @@ const hireFaqOrder = [
 ] as const;
 
 export default function HireSection() {
-  const { t, language } = useLanguage();
-  const searchParams = useSearchParams();
+  const t = useTranslations();
 
   return (
     <section className="space-y-8">
@@ -28,12 +28,12 @@ export default function HireSection() {
       <div className="grid gap-6 md:grid-cols-2">
         <article className="space-y-3 rounded-2xl border border-(--border-subtle) p-6">
           <h2 className="text-lg font-semibold">{t("hirePackageHalfDayTitle")}</h2>
-          <p className="text-xl font-medium text-(--text-primary)">{t("footerRateHalfDay")}</p>
+          <p className="text-xl font-medium text-(--text-primary)">{t("footerRateHalfDay", { halfDayThb })}</p>
           <p className="text-sm text-(--text-secondary)">{t("hirePackageHalfDayDetail")}</p>
         </article>
         <article className="space-y-3 rounded-2xl border border-(--border-subtle) p-6">
           <h2 className="text-lg font-semibold">{t("hirePackageFullDayTitle")}</h2>
-          <p className="text-xl font-medium text-(--text-primary)">{t("footerRateFullDay")}</p>
+          <p className="text-xl font-medium text-(--text-primary)">{t("footerRateFullDay", { fullDayThb })}</p>
           <p className="text-sm text-(--text-secondary)">{t("hirePackageFullDayDetail")}</p>
         </article>
       </div>
@@ -47,7 +47,7 @@ export default function HireSection() {
         </ul>
         <p className="text-sm text-(--text-secondary)">
           <Link
-            href={buildLocalizedHref("/portrait", searchParams, language)}
+            href="/portrait"
             className="underline underline-offset-4 hover:text-(--text-primary)"
           >
             {t("hireViewPortfolio")}

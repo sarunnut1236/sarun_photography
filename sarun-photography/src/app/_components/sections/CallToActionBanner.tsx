@@ -1,18 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useCloudinary, isCloudinarySrc } from "../../_hooks/use-cloudinary";
-import { useLanguage } from "../../_providers/language-context";
-import { buildLocalizedHref } from "../../_lib/routing";
+import { settings } from "../../_lib/settings";
+
+const { halfDayThb } = settings.rates;
 
 const CTA_IMAGE_SRC =
   "https://res.cloudinary.com/dkjleico2/image/upload/v1779205103/IMG_5567_d8osr8.jpg";
 
 export default function CallToActionBanner() {
-  const { t, language } = useLanguage();
-  const searchParams = useSearchParams();
+  const t = useTranslations();
   const headline = t("homeCtaHeadline");
   const { isEnabled } = useCloudinary();
   const canShowImage = isEnabled && isCloudinarySrc(CTA_IMAGE_SRC);
@@ -40,10 +40,10 @@ export default function CallToActionBanner() {
           <div className="space-y-4">
             <h2 className="text-lg font-semibold leading-snug tracking-tight md:text-xl">{headline}</h2>
             <p className="text-sm leading-relaxed text-(--text-secondary) md:text-base">
-              {t("homeIntroBody")}
+              {t("homeIntroBody", { halfDayThb })}
             </p>
             <Link
-              href={buildLocalizedHref("/hire", searchParams, language)}
+              href="/hire"
               className="inline-flex w-fit items-center justify-center rounded-full bg-(--text-primary) px-5 py-2 text-sm text-(--bg) transition-opacity hover:opacity-90"
             >
               {t("homeIntroCta")}
