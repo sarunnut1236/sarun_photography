@@ -3,9 +3,14 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { track } from "@vercel/analytics";
-import { hireFaqOrder } from "../../_content/copy";
 import { useLanguage } from "../../_providers/language-context";
 import { buildLocalizedHref } from "../../_lib/routing";
+
+const hireFaqOrder = [
+  ["hireFaq1Q", "hireFaq1A"],
+  ["hireFaq2Q", "hireFaq2A"],
+  ["hireFaq3Q", "hireFaq3A"],
+] as const;
 
 export default function HireSection() {
   const { t, language } = useLanguage();

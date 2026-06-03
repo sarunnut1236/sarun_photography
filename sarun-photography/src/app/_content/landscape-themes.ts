@@ -14,56 +14,56 @@ export const landscapeThemes: LandscapeTheme[] = [
     id: "cityscape",
     title: { en: "Cityscape", th: "ภาพซิตี้สเคป" },
     description: {
-      en: "Bangkok and other cities at the edges of the day — skylines, streets, and pockets of quiet between buildings.",
-      th: "กรุงเทพฯ และเมืองอื่น ๆ ช่วงแสงเปลี่ยน — เส้นขอบฟ้า ถนน และมุมเงียบ ๆ ระหว่างตึก",
+      en: "Whenever I spot something pretty, I shoot it — temples, buildings, or even nice car light trails.",
+      th: "เจออะไรสวย ๆ ก็ถ่ายมา ไม่ว่าจะเป็น วัดวาอาราม ตึก หรือว่าไฟรถสวย ๆ",
     },
   },
   {
     id: "landscape",
     title: { en: "Landscape", th: "ภาพแลนด์สเคป" },
     description: {
-      en: "Wider views from road trips and hikes — valleys, ridges, and horizons that made me stop the car.",
-      th: "ภาพกว้างจากทริปและการเดินป่า — หุบเขา สันเขา และเส้นขอบฟ้าที่ทำให้ต้องจอดรถ",
+      en: "Sweeping views of forests and mountains — just to show how grand nature really is.",
+      th: "วิวทิวทัศน์ป่าเขาลำเนาไพร ให้มันรู้ไปเลยว่าธรรมชาติมันยิ่งใหญ่แค่ไหน",
     },
   },
   {
     id: "nature",
     title: { en: "Nature", th: "ภาพธรรมชาติ" },
     description: {
-      en: "Forests, water, and small details outdoors — the parts of a place that feel alive rather than scenic only.",
-      th: "ป่า น้ำ และรายละเอียดเล็ก ๆ กลางแจ้ง — สิ่งที่ทำให้รู้สึกว่าสถานที่นั้นมีชีวิต ไม่ใช่แค่สวย",
+      en: "Close-ups of the beautiful things in nature — plants, animals, the sun, or natural phenomena.",
+      th: "ถ่ายเจาะจงสิ่งสวยงามในธรรมชาติ ไม่ว่าจะเป็นพืช สัตว์ พระอาทิตย์ หรือว่าปรากฎการณ์ทางธรรมชาติ",
     },
   },
   {
     id: "star",
     title: { en: "Stars", th: "ภาพดาว" },
     description: {
-      en: "Night sky experiments — learning how little light the sensor needs and how patient you have to be.",
-      th: "ทดลองถ่ายท้องฟ้ายามค่ำ — เรียนรู้ว่าเซนเซอร์ต้องการแสงน้อยแค่ไหน และต้องอดทนแค่ไหน",
+      en: "The stars still shine bright tonight — you've got to escape the city's light pollution to actually catch them.",
+      th: "ค่ำคืนนี้ยังมีดวงดาวเจิดจ้า ต้องออกไปต่างจังหวัดที่มีมลพิษทางแสงน้อย ๆ ถึงจะถ่ายติดดาว",
     },
   },
   {
     id: "sky",
     title: { en: "Sky", th: "ภาพท้องฟ้า" },
     description: {
-      en: "Clouds, sunsets, and changing weather — often the reason I pointed the camera up instead of ahead.",
-      th: "เมฆ พระอาทิตย์ตกดิน และอากาศที่เปลี่ยน — บ่อยครั้งเป็นสาเหตุที่หันกล้องขึ้นฟ้าแทนข้างหน้า",
+      en: "After school every day I'd grab my camera and bike out to shoot the evening sky — the clouds are gorgeous and never the same twice.",
+      th: "ทุกวันตอนหลังเลิกเรียนผมชอบถือกล้องแล้วปั่นจักรยานออกไปถ่ายท้องฟ้าตอนเย็น เมฆแต่ละวันมันสวยไม่เคยเหมือนกันเลย",
     },
   },
   {
     id: "architecture",
     title: { en: "Architecture", th: "ภาพสถาปัตยกรรม" },
     description: {
-      en: "Temples, structures, and lines in built spaces — shape, symmetry, and how light falls on surfaces.",
-      th: "วัด สิ่งปลูกสร้าง และเส้นในพื้นที่ที่มนุษย์สร้าง — รูปทรง สมมาตร และแสงที่กระทบผิว",
+      en: "Beautiful architecture shot up close and intentional — not the wide overview like cityscape.",
+      th: "สถาปัตยกรรมสวย ๆ ถ่ายแบบเจาะจง ไม่ได้ถ่ายรวม ๆ เหมือน cityscape",
     },
   },
   {
     id: "minimalism",
     title: { en: "Minimalism", th: "ภาพมินิมอล" },
     description: {
-      en: "Frames with not much in them on purpose — a few elements, negative space, and calm composition.",
-      th: "เฟรมที่ตั้งใจให้ไม่มีของมาก — องค์ประกอบน้อยชิ้น พื้นที่ว่าง และองค์ประกอบที่สงบ",
+      en: "A super artsy style — I just shoot whatever I feel like.",
+      th: "เป็นสไตล์ที่ติสต์มาก อยากถ่ายอะไรก็ถ่าย",
     },
   },
 ];

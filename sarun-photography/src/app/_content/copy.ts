@@ -56,12 +56,12 @@ export const copy = {
     th: "รับถ่ายภาพบุคคลตามนัดหมาย",
   },
   footerRateHalfDay: {
-    en: `Half day ${halfDayThb} THB`,
-    th: `ครึ่งวัน ${halfDayThb} บาท`,
+    en: `Half day: ${halfDayThb} THB`,
+    th: `ครึ่งวัน: ${halfDayThb} บาท`,
   },
   footerRateFullDay: {
-    en: `Full day ${fullDayThb} THB`,
-    th: `เต็มวัน ${fullDayThb} บาท`,
+    en: `Full day: ${fullDayThb} THB`,
+    th: `เต็มวัน: ${fullDayThb} บาท`,
   },
   footerEmailCta: {
     en: "Email",
@@ -77,62 +77,62 @@ export const copy = {
   },
   homeGearTitle: {
     en: "Gear I shoot with",
-    th: "อุปกรณ์ที่ใช้ถ่าย",
+    th: "อุปกรณ์ที่ใช้",
   },
   homeGearIntro: {
-    en: "A simple Nikon setup — body and a few lenses for portraits and everyday work.",
-    th: "เซ็ต Nikon เรียบง่าย — ตัวกล้องกับเลนส์ไม่กี่ตัวสำหรับพอร์ตเทรตและงานทั่วไป",
+    en: "I'm a Nikon shooter who still uses DSLR camera cuz shutter sound is so mesmerizing",
+    th: "ผมเป็นช่างภาพสาย Nikon ที่ยังใช้กล้องกระจกอยู่ เพราะหลงรักเสียงตอนกดชัตเตอร์เหลือเกิน",
   },
   homeIntroBody: {
-    en: `I shoot graduation, university, and lifestyle portraits around Bangkok. Sessions start at ${halfDayThb} THB for a half day.`,
-    th: `รับถ่ายรูปรับปริญญา มหาวิทยาลัย และไลฟ์สไตล์ในกรุงเทพฯ เริ่มต้นครึ่งวัน ${halfDayThb} บาท`,
+    en: `I shoot graduation, university, and lifestyle portraits around Bangkok. Starting at ${halfDayThb} THB`,
+    th: `รับถ่ายรูปรับปริญญา หรือว่าจะถ่ายชิลล์ ๆ ก็ได้ เน้นในกรุงเทพเป็นหลัก เริ่มต้น ${halfDayThb} บาท`,
   },
   homeIntroCta: {
-    en: "Book a session",
-    th: "จองคิวถ่ายภาพ",
+    en: "Book a session now",
+    th: "จองคิวถ่ายภาพเลย",
   },
   homeCtaHeadline: {
-    en: "If you like them, hire me plsss",
-    th: "จ้างผมได้นะคร้าบบบ",
+    en: "If you like my style, hire me plsss 🥺",
+    th: "ถ้าถูกใจ จ้างผมได้น้าาาา 🥺",
   },
   hireTitle: {
-    en: "Book a portrait session in Bangkok",
-    th: "จองถ่ายภาพบุคคลในกรุงเทพฯ",
+    en: "Book a portrait session",
+    th: "จองถ่ายภาพ",
   },
   hireIntro: {
-    en: "Based in Bangkok. I offer relaxed portrait sessions for graduation, university life, and everyday city shoots.",
-    th: "รับงานในกรุงเทพฯ ถ่ายแบบสบาย ๆ ทั้งรับปริญญา ชีวิตในมหาลัย และพอร์ตเทรตในเมือง",
+    en: "Graduation day shooting, casual university and campus photo walks, and lifestyle portrait sessions",
+    th: "ถ่ายรูปวันรับปริญญา, ถ่ายนอกรอบกับชุดครุย, ถ่ายเล่น ๆ ชิลล์ ๆ ตามสถานที่ท่องเที่ยว",
   },
   hirePackageHalfDayTitle: {
-    en: "Half day",
-    th: "ครึ่งวัน",
+    en: "Value pack",
+    th: "แพคเกจพอใจ",
   },
   hirePackageHalfDayDetail: {
-    en: "Around 2–3 hours, one location in Bangkok, edited photos delivered digitally.",
-    th: "ประมาณ 2–3 ชั่วโมง 1 โลเคชันในกรุงเทพฯ ส่งไฟล์ที่รีทัชแล้ว",
+    en: "Around 4-6 hours, either in the morning or afternoon, delivered both raw and edited photos",
+    th: "ประมาณ 4-6 ชั่วโมง ครึ่งวันเช้าหรือบ่ายก็ได้, ส่งทั้งไฟล์ดิบและไฟล์ที่แต่งแล้ว",
   },
   hirePackageFullDayTitle: {
-    en: "Full day",
-    th: "เต็มวัน",
+    en: "Full pack",
+    th: "แพคเกจหนำใจ",
   },
   hirePackageFullDayDetail: {
-    en: "Flexible schedule, multiple spots in Bangkok, edited photos delivered digitally.",
-    th: "ยืดหยุ่นเรื่องเวลา หลายโลเคชันในกรุงเทพฯ ส่งไฟล์ที่รีทัชแล้ว",
+    en: "Whole day (up to 12 hours), flexible schedule, delivered both raw and edited photos",
+    th: "ได้ทั้งวัน (สูงสุด 12 ชั่วโมง) ยืดหยุ่นเรื่องเวลา, ส่งทั้งไฟล์ดิบและไฟล์ที่แต่งแล้ว",
   },
   hireSessionsTitle: {
     en: "Session types",
     th: "ประเภทงานที่รับ",
   },
   hireSessionGeneral: {
-    en: "Lifestyle and city portrait sessions",
-    th: "พอร์ตเทรตไลฟ์สไตล์และถ่ายในเมือง",
+    en: "Lifestyle portrait sessions around Bangkok",
+    th: "ไลฟ์สไตล์ ตามสถานที่ต่าง ๆ กรุงเทพฯ",
   },
   hireSessionGraduation: {
-    en: "Graduation portraits in gown and campus locations",
-    th: "ถ่ายรูปรับปริญญา ชุดครุย และในมหาลัย",
+    en: "Graduation day, White coat ceremony, Graduation practice, Graduation gown photo walk",
+    th: "ถ่ายรูปวันรับปริญญา, รับกาวน์, ซ้อมรับปริญญา, ชุดครุยนอกรอบ",
   },
   hireSessionUniversity: {
-    en: "Casual university and campus photo walks",
+    en: "Casual campus photo walks",
     th: "ถ่ายรูปเล่นในมหาลัยแบบสบาย ๆ",
   },
   hireViewPortfolio: {
@@ -148,37 +148,31 @@ export const copy = {
     th: "คำถามที่พบบ่อย",
   },
   hireFaq1Q: {
-    en: "Do you shoot graduation at universities in Bangkok?",
-    th: "รับถ่ายรูปรับปริญญาในกรุงเทพฯ ไหม?",
+    en: "Do you shoot outside Bangkok?",
+    th: "รับถ่ายรูปนอกกรุงเทพฯ ไหม?",
   },
   hireFaq1A: {
-    en: "Yes — graduation and campus sessions are available. Share your date and university so we can plan locations.",
-    th: "รับครับ — ทั้งรับปริญญาและในมหาลัย บอกวันที่กับมหาลัยมาได้เลย จะช่วยวางโลเคชัน",
+    en: "I prefer to shoot where it's easy to get to, like outskirts or Eastern region (I don't have a car 🥲)",
+    th: "รับเฉพาะสถานที่ที่เดินทางสะดวกครับ เช่น ปริมณฑล, ภาคตะวันออก (ช่างไม่มีรถค้าบ 🥲)",
   },
   hireFaq2Q: {
     en: "How far in advance should I book?",
     th: "ควรจองล่วงหน้ากี่วัน?",
   },
   hireFaq2A: {
-    en: "1–2 weeks is ideal for graduation season. Weekday lifestyle shoots can sometimes be arranged sooner.",
-    th: "ช่วงรับปริญญาแนะนำ 1–2 สัปดาห์ งานไลฟ์สไตล์วันธรรมดาอาจจัดได้เร็วกว่านั้น",
+    en: "Shortest notice is 1 week. On the other hand, you can book months in advance, I'll add it to my calendar.",
+    th: "จองกระชั้นชิดสุด 1 สัปดาห์ จองล่วงหน้าได้นานเป็นปี ๆ เลย เดี๋ยวช่างลงแพลนในปฏิทินไว้ครับ",
   },
   hireFaq3Q: {
     en: "Indoor or outdoor?",
     th: "ถ่ายในร่มหรือกลางแจ้ง?",
   },
   hireFaq3A: {
-    en: "Both work. We pick spots based on your style, weather, and whether you need formal graduation portraits.",
-    th: "ได้ทั้งสองแบบ เลือกตามสไตล์ อากาศ และว่าเป็นชุดรับปริญญาหรือไม่",
+    en: "Depends on the weather and the location. If it's sunny and pretty, I'll recommend shooting outdoors.",
+    th: "แล้วแต่ลูกค้าเลยครับ ถ้าแสงสวยก็จะเชียร์ให้ไปถ่ายกลางแจ้ง อาจจะไม่ร้อนมาก",
   },
   landscapeIntro: {
-    en: "Places I keep going back to — city edges, quiet temples, trails, and skies. This is the personal side of my photography, shot for the love of light and landscape.",
-    th: "ที่ที่ผมชอบกลับไปซ้ำ ๆ — ขอบเมือง วัดเงียบ ๆ เส้นทางเดิน และท้องฟ้า นี่คือด้านส่วนตัวของการถ่ายภาพ ทำเพราะรักแสงและภาพทิวทัศน์",
+    en: "If I were to define my style, I'd say I'm a Landscape photographer. Nature often teaches us to be calm and patient, and those who are the most patient often get the most beautiful photos.",
+    th: "ถ้าให้นิยามว่าตัวเองเป็นช่างภาพสายไหน ผมก็คงต้องบอกว่าผมเป็นช่างภาพ Landscape ครับ ธรรมชาติมักจะสอนให้เราใจเย็นเสมอ คนที่อดทนรอได้นานที่สุดมักได้ภาพที่สวยที่สุด",
   },
 } as const;
-
-export const hireFaqOrder = [
-  ["hireFaq1Q", "hireFaq1A"],
-  ["hireFaq2Q", "hireFaq2A"],
-  ["hireFaq3Q", "hireFaq3A"],
-] as const;

@@ -20,8 +20,8 @@ type LocalizedSeo = {
 export const seoPages = {
   home: {
     title: {
-      en: "Bangkok Portrait Photographer",
-      th: "ช่างภาพบุคคล กรุงเทพ",
+      en: "Sarun Photography",
+      th: "ซารัน โฟโตกราฟฟี",
     },
     description: {
       en: `Portrait sessions in Bangkok from ${halfDayThb} THB. Graduation, university, and lifestyle photography by Sarun Photography.`,

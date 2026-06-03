@@ -61,7 +61,7 @@ export function buildPageMetadata(
   const ogImage = page.ogImage ?? DEFAULT_OG_IMAGE;
 
   return {
-    title,
+    title: pageKey === "home" ? { absolute: title } : title,
     description,
     alternates: {
       canonical: canonicalUrl(path),
