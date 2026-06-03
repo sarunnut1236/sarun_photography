@@ -10,7 +10,30 @@ This document explains how to update text content and images in the Sarun Photog
 
 ---
 
-## 1. Updating Text Content (Copy)
+## 1. Site settings (numbers only)
+
+### Location
+- **File**: `sarun-photography/settings.json`
+
+### Structure
+Values only — no copy, formatting, or translations:
+
+```json
+{
+  "rates": {
+    "halfDayThb": 1500,
+    "fullDayThb": 2000
+  }
+}
+```
+
+### How to update
+1. Edit the numbers in `settings.json`.
+2. Wording that includes rates lives in `copy.ts` and `seo-copy.ts` (those files import `settings` and interpolate `${halfDayThb}` / `${fullDayThb}`).
+
+---
+
+## 2. Updating Text Content (Copy)
 
 ### Location
 - **File**: `sarun-photography/src/app/_content/copy.ts`
@@ -46,7 +69,7 @@ export const copy = {
 | `heroTitle`, `heroSubtitle` | Landing page hero section |
 | `portraitsSectionTitle`, `portraitsSectionCta` | Portrait preview / gallery |
 | `landscapesSectionTitle`, `landscapesSectionCta` | Landscape preview / gallery |
-| `footerLocation`, `footerAvailability`, `footerRate` | Footer text |
+| `footerLocation`, `footerAvailability`, `footerRateHalfDay`, `footerRateFullDay` | Footer text |
 | `footerEmailCta`, `footerInstagramLabel` | Footer contact labels |
 
 ---
@@ -87,7 +110,7 @@ Portrait content is organized by **albums**, each containing multiple **photos**
 
 ---
 
-## 3. Updating Landscape Images and Descriptions (Cloudinary)
+## 4. Updating Landscape Images and Descriptions (Cloudinary)
 
 ### Location
 - **File**: `sarun-photography/src/app/_content/landscape-photos.ts`
@@ -116,7 +139,7 @@ Landscape content is a flat list of photos (no albums), each with a Cloudinary U
 
 ---
 
-## 4. Hero Section Image (Cloudinary)
+## 5. Hero Section Image (Cloudinary)
 
 ### Location
 - **Component**: `sarun-photography/src/app/_components/sections/HeroSection.tsx`
@@ -127,7 +150,7 @@ Landscape content is a flat list of photos (no albums), each with a Cloudinary U
 
 ---
 
-## 5. Adding New Images to the Project (Cloudinary)
+## 6. Adding New Images to the Project (Cloudinary)
 
 ### Step-by-step
 1. **Upload the file to Cloudinary** using your Cloudinary account.
@@ -147,7 +170,7 @@ Landscape content is a flat list of photos (no albums), each with a Cloudinary U
 
 ---
 
-## 6. Cloudinary Configuration and Behavior
+## 7. Cloudinary Configuration and Behavior
 
 - The app uses a single `useCloudinary()` hook (`src/app/_hooks/use-cloudinary.ts`) to read `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` once.
 - When Cloudinary is not configured (missing env var) or when a URL is not a Cloudinary URL, portfolio and hero images are not rendered.

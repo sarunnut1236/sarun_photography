@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useLanguage } from "../../_providers/language-context";
+import { useTranslations } from "next-intl";
 import { useCloudinary, isCloudinarySrc } from "../../_hooks/use-cloudinary";
 
 const HERO_IMAGE_SRC =
   "https://res.cloudinary.com/dkjleico2/image/upload/v1773089164/IMG_5668_p1cuxr.jpg";
 
 export default function HeroSection() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   const { isEnabled } = useCloudinary();
   const canShowHero = isEnabled && isCloudinarySrc(HERO_IMAGE_SRC);
 

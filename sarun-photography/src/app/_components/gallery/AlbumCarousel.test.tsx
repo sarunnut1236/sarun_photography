@@ -10,6 +10,10 @@ const cloudinary = (id: string) =>
 const mockAlbum: PortraitAlbum = {
   id: "test-album",
   title: { en: "City wander", th: "เที่ยวในเมือง" },
+  seoDescription: {
+    en: "Bangkok street portrait session.",
+    th: "พอร์ตเทรตเดินเที่ยวในเมืองกรุงเทพฯ",
+  },
   photos: [
     {
       id: "photo-1",

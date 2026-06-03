@@ -10,7 +10,7 @@ describe("PortraitPreviewSection", () => {
     expect(screen.getByRole("heading", { name: "Portrait Sessions" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Find more portraits" })).toHaveAttribute(
       "href",
-      "/portrait?lang=en",
+      "/en/portrait",
     );
   });
 

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import type { TouchEvent } from "react";
-import { useLanguage } from "../../_providers/language-context";
+import { useLocale } from "next-intl";
 import type { PortraitAlbum } from "../../_content/portrait-albums";
 import { isCloudinarySrc, useCloudinary } from "../../_hooks/use-cloudinary";
 
@@ -20,7 +20,7 @@ export default function AlbumCarousel({
   intervalMs = 5000,
   variant = "preview",
 }: AlbumCarouselProps) {
-  const { language } = useLanguage();
+  const locale = useLocale() as "en" | "th";
   const { isEnabled } = useCloudinary();
   const [index, setIndex] = useState(0);
   const [userInteracted, setUserInteracted] = useState(false);
@@ -79,7 +79,7 @@ export default function AlbumCarousel({
     touchCurrentX.current = null;
   };
 
-  const title = album.title[language] ?? album.title.en;
+  const title = album.title[locale] ?? album.title.en;
   const imageSrc =
     active && "cloudinaryId" in active && active.cloudinaryId ? active.cloudinaryId : active?.src;
 
@@ -174,7 +174,7 @@ export default function AlbumCarousel({
               <Image
                 key={active.id}
                 src={imageSrc as string}
-                alt={active.alt[language] ?? active.alt.en}
+                alt={active.alt[locale] ?? active.alt.en}
                 fill
                 sizes={activeSizes}
                 className="object-contain"
@@ -213,7 +213,7 @@ export default function AlbumCarousel({
           <p className="text-xs uppercase tracking-wide text-(--text-secondary)">{title}</p>
           {active && (
             <p className="text-sm text-(--text-primary)">
-              {active.description[language] ?? active.description.en}
+              {active.description[locale] ?? active.description.en}
             </p>
           )}
           {photos.length > 1 && (
