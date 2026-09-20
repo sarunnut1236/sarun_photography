@@ -20,6 +20,140 @@ export type PortraitAlbum = {
 
 export const portraitAlbums: PortraitAlbum[] = [
   {
+    id: "ferngrad",
+    title: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+    seoDescription: {
+      en: "Take a photoshoot in pair with academic gown in Benjakitti park",
+      th: "ถ่ายรูปคู่กับชุดครุยที่สวนเบญ",
+    },
+    photos: [
+      {
+        id: "ferngrad1",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895554/Fern_Grad_Portrait_202_necc1e.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      },
+      {
+        id: "ferngrad2",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895618/Fern_Grad_Portrait_235_gpmy9d.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      },
+      {
+        id: "ferngrad3",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895553/Fern_Grad_Portrait_131_mpiqsm.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      },
+      {
+        id: "ferngrad4",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895556/Fern_Grad_Portrait_308_mcrmuh.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      },
+      {
+        id: "ferngrad5",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895559/Fern_Grad_Portrait_104_mxl8x6.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      },
+      {
+        id: "ferngrad6",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895557/Fern_Grad_Portrait_93_dok5tf.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      },
+      {
+        id: "ferngrad7",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895556/Fern_Grad_Portrait_73_vhqmqs.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      },
+      {
+        id: "ferngrad8",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895555/Fern_Grad_Portrait_186_flsv35.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      },
+      {
+        id: "ferngrad9",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789895554/Fern_Grad_Portrait_222_im3npu.jpg",
+        alt: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+        description: { en: "Couple graduation portraits", th: "ชุดภาพรับปริญญาคู่" },
+      }
+    ],
+  },
+  {
+    id: "ainggrad",
+    title: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+    seoDescription: {
+      en: "Take a photoshoot with academic gown in Chulalongkorn university",
+      th: "ถ่ายรูปกับชุดครุยที่จุฬาฯ",
+    },
+    photos: [
+      {
+        id: "ainggrad1",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894661/Aing_Grad_Portrait_2569_1_dnafn5.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad2",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894661/Aing_Grad_Portrait_2569_27_fuxuzn.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad3",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894661/Aing_Grad_Portrait_2569_20_uadm0o.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad4",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894662/Aing_Grad_Portrait_2569_33_mlo9xp.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad5",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894754/Aing_Grad_Portrait_2569_92_gvph6c.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad6",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894757/Aing_Grad_Portrait_2569_62_nalfnc.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad7",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894916/Aing_Grad_Portrait_2569_187_c9riuf.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad8",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894917/Aing_Grad_Portrait_2569_197_eq32ks.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad9",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894918/Aing_Grad_Portrait_2569_103_x69sya.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+      {
+        id: "ainggrad10",
+        src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789894919/Aing_Grad_Portrait_2569_162_d7g3tu.jpg",
+        alt: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+        description: { en: "Graduation portraits 2026", th: "ชุดภาพรับปริญญา 2569" },
+      },
+    ],
+  },
+  {
     id: "ferntam",
     title: { en: "City wander", th: "เที่ยวในเมือง" },
     seoDescription: {

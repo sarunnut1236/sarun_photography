@@ -137,6 +137,19 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "cityscape",
   },
   {
+    id: "cityscape7",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789896483/%E0%B8%9C%E0%B8%AA%E0%B8%A1%E0%B8%9E%E0%B8%A5%E0%B8%B82_tihv8t.jpg",
+    alt: {
+      en: "Taking a shot of flares by the Chao Phraya river",
+      th: "ถ่ายรูปพลุหน้าไอคอนสยาม ถ่ายจากสะพานตากสิน",
+    },
+    description: {
+      en: "Taking a shot of flares by the Chao Phraya river",
+      th: "ถ่ายรูปพลุหน้าไอคอนสยาม ถ่ายจากสะพานตากสิน",
+    },
+    theme: "cityscape",
+  },
+  {
     id: "landscape6",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773084262/Phu_Kradueng_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_14_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_1_m9bsgd.jpg",
     alt: {
@@ -319,6 +332,19 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "minimalism",
   },
   {
+    id: "minimal11",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789896644/Otaru_2569_11_abf1ln.jpg",
+    alt: {
+      en: "A peaceful shore at Otaru Port, Hokkaido, Japan",
+      th: "ริมน้ำที่เมืองโอตารุ ฮอกไกโด ทะเลหน้าร้อนที่นี่ฟินดีจัง ดูสงบมาก",
+    },
+    description: {
+      en: "A peaceful shore at Otaru Port, Hokkaido, Japan",
+      th: "ริมน้ำที่เมืองโอตารุ ฮอกไกโด ทะเลหน้าร้อนที่นี่ฟินดีจัง ดูสงบมาก",
+    },
+    theme: "minimalism",
+  },
+  {
     id: "landscape9",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085082/Thongphaphum_Trip_%E0%B8%98%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B2%E0%B8%84%E0%B8%A1_21_2566_%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%97%E0%B8%B5%E0%B9%88_11_vm0jqn.jpg",
     alt: {
@@ -328,6 +354,19 @@ export const landscapePhotos: LandscapePhoto[] = [
     description: {
       en: "Most fav photo of Thong Pha Phum trip, so aesthetic.",
       th: "นี่เป็นรูปที่ชอบที่สุดในทริปทองผาภูมิ สุนทรีย์มาก",
+    },
+    theme: "landscape",
+  },
+  {
+    id: "landscape10",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789896673/Ao_Ike_Blue_Pond_2569_2_f2edqx.jpg",
+    alt: {
+      en: "Ao Ike Blue Pond in Hokkaido Japan, an iconic tourist spot in summer",
+      th: "บ่อน้ำสีฟ้า กับต้นไม้ที่ไม่มีใบ มุมซิกเนเจอร์สำหรับการมาเที่ยวฮอกไกโดหน้าร้อน",
+    },
+    description: {
+      en: "Ao Ike Blue Pond in Hokkaido Japan, an iconic tourist spot in summer",
+      th: "บ่อน้ำสีฟ้า กับต้นไม้ที่ไม่มีใบ มุมซิกเนเจอร์สำหรับการมาเที่ยวฮอกไกโดหน้าร้อน",
     },
     theme: "landscape",
   },
@@ -471,6 +510,19 @@ export const landscapePhotos: LandscapePhoto[] = [
     description: {
       en: "Macro view of a small green plant",
       th: "ภาพมาโครของต้นอะไรก็ไม่รู้ แต่สวยมาก",
+    },
+    theme: "nature",
+  },
+  {
+    id: "nature12",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1789896594/Tomita_Farm_2569_7_ve0ffo.jpg",
+    alt: {
+      en: "Lavender field in Tomita Farm, Hokkaido, Japan",
+      th: "รูปสวนดอกไม้ จากโทมิตะฟาร์ม ฮอกไกโด ช่วงหน้าร้อนกำลังน่าเที่ยวเลย",
+    },
+    description: {
+      en: "Lavender field in Tomita Farm, Hokkaido, Japan",
+      th: "รูปสวนดอกไม้ จากโทมิตะฟาร์ม ฮอกไกโด ช่วงหน้าร้อนกำลังน่าเที่ยวเลย",
     },
     theme: "nature",
   },
