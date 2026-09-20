@@ -46,3 +46,8 @@ next-env.d.ts
 skills-lock.json
 
 bundle.js
+
+# Serwist (generated at build)
+public/sw.js
+public/sw.js.map
+public/swe-worker*
