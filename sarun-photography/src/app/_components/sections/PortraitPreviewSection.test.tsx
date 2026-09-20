@@ -17,8 +17,8 @@ describe("PortraitPreviewSection", () => {
   it("shows preview album titles from content", () => {
     renderWithProviders(<PortraitPreviewSection />);
 
+    expect(screen.getAllByText("Couple graduation portraits").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Graduation portraits 2026").length).toBeGreaterThan(0);
     expect(screen.getAllByText("City wander").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("University shots").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Graduation photoshoot").length).toBeGreaterThan(0);
   });
 });
