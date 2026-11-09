@@ -371,6 +371,19 @@ export const landscapePhotos: LandscapePhoto[] = [
     theme: "landscape",
   },
   {
+    id: "landscape11",
+    src: "https://res.cloudinary.com/dkjleico2/image/upload/v1794230468/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%B2%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A2%E0%B8%B4%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B9%81%E0%B8%81%E0%B9%89%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%A5%E0%B8%87_1_vdnau2.jpg",
+    alt: {
+      en: "powerful water with rainbow in Laos",
+      th: "น้ำตกตาดตายิกเสือ ลาว มีสายรุ้งด้วย โคตรสวย",
+    },
+    description: {
+      en: "powerful water with rainbow in Laos",
+      th: "น้ำตกตาดตายิกเสือ ลาว มีสายรุ้งด้วย โคตรสวย",
+    },
+    theme: "landscape",
+  },
+  {
     id: "sky8",
     src: "https://res.cloudinary.com/dkjleico2/image/upload/v1773085406/%E0%B8%88%E0%B8%B4%E0%B9%8B%E0%B8%A7%E0%B8%A7%E0%B8%A7%E0%B8%A7_%E0%B8%81%E0%B8%A3%E0%B8%81%E0%B8%8E%E0%B8%B2%E0%B8%84%E0%B8%A1_04_2021_tbol2j.png",
     alt: {
